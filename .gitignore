@@ -4,6 +4,7 @@
 !wp-config-sample.php
 !.htaccess
 !robots.txt
+!*.sh
 
 # Ignore everything in wp-content except themes and plugins
 /wp-content/*

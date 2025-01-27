@@ -1,49 +1,57 @@
-# Ignore root directory except for a few custom files
-/*
-!.gitignore
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
 !wp-config-sample.php
 !.htaccess
 !robots.txt
 !*.sh
 
-# Ignore everything in wp-content except themes and plugins
-/wp-content/*
-!/wp-content/themes/
-!/wp-content/plugins/
-
-# Just save hello-elementor and mautic-theme
-/wp-content/themes/*
-!/wp-content/themes/hello-elementor/
-!/wp-content/themes/mautic-theme/
-
-# Not sure if we want to backup plugins, we can uncomment if so
-#/wp-content/plugins/*
-
-# Uploads should be handled with snapshots or other archived backups to avoid a bloated repo
-/wp-content/uploads/
-!wp-content/uploads/.gitkeep  # Empty marker for structure
-
-# Caching, backup, and upgrade files
-/wp-content/cache/
-!/wp-content/cache/.gitkeep  # empty marker to maintian structure
-/wp-content/backup-db/
-/wp-content/upgrade/
-
-# Ignore system files
-.DS_Store
-Thumbs.db
-*.log
-*.sql
-*.sqlite
-
 # Composer files
 vendor/
 node_modules/
 
-# Sensitive files (see wp-config-sample.php)
-wp-config.php
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
 
-# Ignore WordPress core files
-/wp-admin/
-wp-includes/
-
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes

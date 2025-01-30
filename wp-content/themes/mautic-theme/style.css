@@ -256,3 +256,15 @@ Version: 1.0.0
     background: #eaeaea;
 }
 
+
+/* partner types */
+.elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-text span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 0 .5em;
+}

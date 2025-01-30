@@ -1,0 +1,270 @@
+/*
+Theme Name: Mautic
+Theme URI: mautic.org
+Description: The official WordPress theme for Mautic.org
+Author: Mike Van Hemelrijck
+Author URI: dropsolid.io
+Template: hello-elementor
+Version: 1.0.0
+*/
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.service-card {
+    flex: 1 1 calc(25% - 30px);
+    min-width: 200px;
+    background: #ffffff;
+    color: #6e6e6e;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 4px 0px 30px 15px rgba(75, 90, 153, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 0px 40px 20px rgba(75, 90, 153, 0.2);
+}
+
+.service-card h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: #171717;
+}
+
+.service-card p {
+    margin: 0;
+    color: #555;
+}
+
+@media (max-width: 1179px) {
+    .service-card {
+        flex: 1 1 calc(33.333% - 30px);
+    }
+}
+
+@media (max-width: 767px) {
+    .service-card {
+        flex: 1 1 100%;
+    }
+}
+
+.mobile-menu-container {
+    position: relative;
+    z-index: 9999;
+}
+
+@media (max-width: 767px) {
+    .mobile-menu-container {
+        float: right;
+        margin-right: 10px;
+        margin-top: -102px;
+    }
+}
+
+/* Hamburger Icon */
+.mobile-menu-toggle {
+    background: #425090;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.mobile-menu-toggle:hover {
+    background: #fdb933;
+}
+
+.mobile-menu-toggle .hamburger {
+    width: 20px;
+    height: 3px;
+    color:#45508f;
+    background: #fff;
+    display: block;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.mobile-menu-toggle .hamburger::before,
+.mobile-menu-toggle .hamburger::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    color:#45508f;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle .hamburger::before {
+    top: -6px;
+}
+
+.mobile-menu-toggle .hamburger::after {
+    top: 6px;
+}
+
+/* Chevron styles for submenu toggle */
+.submenu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.submenu-toggle[aria-expanded="true"] {
+    transform: rotate(180deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 40px;
+    right: -300px;
+    width: 300px;
+    height: calc(100vh - 40px);
+    background: #425090;
+    color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu .menu-close {
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+    padding: 5px;
+}
+
+.mobile-menu .menu-close:hover {
+    color: #fdb933;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu-list .menu-item {
+    margin-bottom: 0;
+}
+
+.mobile-menu-list li.menu-item > a {
+    color: #fff !important;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu-list .menu-item > a:hover {
+    background: #212C65;
+    color: #fdb933 !important;
+    text-decoration: underline;
+}
+.mobile-menu-list .menu-item-has-children > a[aria-expanded="true"] {
+    background: #7671c5;
+    color: #ffffff !important;
+}
+
+.mobile-menu-list .menu-item-has-children > a[aria-expanded="true"]:hover {
+    background: #7671c5;
+    color: #ffffff !important;
+}
+
+.mobile-menu-list .menu-item-has-children > a::after {
+    content: '▼';
+    font-size: 12px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-list .menu-item-has-children > a[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+/* Submenu Styles */
+.mobile-menu-list .sub-menu {
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    background: #dddde9;
+}
+
+.mobile-menu-list .sub-menu.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.mobile-menu-list .sub-menu li > a {
+    color: #000 !important;
+    text-decoration: none;
+    padding: 12px 24px !important;
+    display: block;
+    background: #dddde9;
+    margin:0;
+}
+
+.mobile-menu-list .sub-menu li > a:hover {
+    color: #9794de;
+    background: #eaeaea;
+}
+
+
+/* partner types */
+.elementor-icon-list-items .elementor-icon-list-item .elementor-icon-list-text span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 0 .5em;
+}

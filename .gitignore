@@ -35,6 +35,15 @@ wp-config.php
 # htaccess
 /.htaccess
 
+!wp-config-sample.php
+!.htaccess
+!robots.txt
+!*.sh
+
+# Composer files
+vendor/
+node_modules/
+
 # All plugins
 #
 # Note: If you wish to whitelist plugins,

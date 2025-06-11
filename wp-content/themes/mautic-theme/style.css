@@ -143,10 +143,14 @@ Version: 1.0.0
     transform: rotate(180deg);
 }
 
+ul#menu-main-menu-top.mobile-menu-list {
+    padding-bottom: 53px;
+}
+
 .mobile-menu {
     position: fixed;
-    top: 40px;
-    right: -300px;
+    top: 20px;
+    right: -200vw;
     width: 300px;
     height: calc(100vh - 40px);
     background: #425090;
@@ -165,7 +169,7 @@ Version: 1.0.0
 
 .mobile-menu .menu-close {
     align-self: flex-end;
-    margin: 10px;
+    margin: 20px 10px 10px;
     cursor: pointer;
     background: none;
     border: none;
@@ -187,6 +191,10 @@ Version: 1.0.0
 
 .mobile-menu-list .menu-item {
     margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+.mobile-menu-list .menu-item:first-of-type {
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
 }
 
 .mobile-menu-list li.menu-item > a {
@@ -220,7 +228,6 @@ Version: 1.0.0
     font-size: 12px;
     margin-left: 10px;
     transition: transform 0.3s ease;
-    text-decoration:none;
 }
 
 .mobile-menu-list .menu-item-has-children > a[aria-expanded="true"]::after {
@@ -255,6 +262,18 @@ Version: 1.0.0
 .mobile-menu-list .sub-menu li > a:hover {
     color: #212C65 !important;
     background: #eaeaea;
+}
+
+@media (max-width: 767px) {
+    .mobile-menu {
+        width: 100%;
+        top: 0;
+        min-height: 100vh;
+        right: -200vw;
+    }
+    .mobile-menu.open {
+        right: 0;
+    }
 }
 
 

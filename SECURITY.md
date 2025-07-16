@@ -9,6 +9,15 @@ If you discover a security vulnerability in this repository or the WordPress web
 
 We will review your report promptly and coordinate a fix if necessary. You will be notified of the outcome.
 
+The timelines we aim to follow are:
+
+- Within one week every report gets acknowledged.
+- Within 14 days every report gets a further response stating either:
+    - the issue is closed (and why);
+    - the issue is still under investigation; if needed, additional information will be requested;
+    - the expected close date.
+- Within 21 days every report should be resolved unless there are exceptional circumstances requiring additional time.
+
 ## Scope
 
 This policy applies to all files and code in this repository, including custom code and configuration for our WordPress website.
@@ -24,4 +33,4 @@ We appreciate responsible disclosure and will credit security researchers in our
 
 ---
 
-_Last updated: 2024-07-15_
+_v 1.0 - First version. Created: 2024-07-15_

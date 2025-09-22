@@ -44,6 +44,9 @@ wp-config.php
 vendor/
 node_modules/
 
+# IDE
+.idea/
+
 # All plugins
 #
 # Note: If you wish to whitelist plugins,

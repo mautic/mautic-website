@@ -1,21 +1,21 @@
-# mautic-website contribution guidelines
+# Mautic Website 
+This is the repo for the main Mautic.org website.
 
+## Contribution Guidelines
 This is the guideline for all those interested in contributing to the Mautic website working group. The Mautic website working group is actively responsible for maintaining the Mautic WordPress websites as well as several web assets which require regular updates, improvements and development of new features. 
-
-While our main ``mautic.org`` website is hosted by Hostnet, it’s our responsibility to drive new developments and innovations.
 
 If you’re a keen web developer and have experience with WordPress, we’d love to hear from you. You will mostly be working on tasks like **Web Development**, **WordPress editing**, **SEO**, **UI/UX**, and **Content Creation**.
 
 We’d love to build a web development team in the community specifically to look after our web properties and keep us moving forward.
 
-## Getting started
+### Getting started
 The first step is to join the Mautic Community Slack and head over to the ``#mautic-community-website channel``. This is a public channel - the team that provides the ‘keep the lights on’ support is present in the channel.
 
 Our website is maintained on the Mautic website repository. So, if you want to help support the main mautic.org site, you will need to check out the mautic-website issues page to choose the issue that best suits your skills and interests.
 
 Our other websites are maintained by the Education Team, who are on Slack in ``#t-education``.
 
-### The websites supported by this team include:
+#### The websites supported by this team include:
 
 - The End-User Documentation - on [Read the Docs](https://docs.mautic.org/)
 - The Developer Documentation - on [Read the Docs](https://devdocs.mautic.org/)
@@ -25,10 +25,10 @@ Our other websites are maintained by the Education Team, who are on Slack in ``#
 
 These are all maintained via a GitHub repository, except the Knowledgebase, with editable links at the bottom of each page. The MautiCon website does not currently have a repository.
 
-## Your first task
+### Your first task
 After joining the Slack channels, come back to the issues page to select an issue you are interested in, leave a comment under the issue stating your interest, and it will be assigned to you. You can also paste a link to the issue in the **website-team Slack channel**, requesting to be assigned to the task, and it will be assigned to you.
 
-## How to Work
+### How to Work
 Please make sure you provide regular  - ideally daily - updates on any tasks you are working on.  
 You can use the prefix ``WIP-`` to indicate that your work is currently in progress. 
 

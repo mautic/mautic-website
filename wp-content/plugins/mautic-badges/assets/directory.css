@@ -1,0 +1,214 @@
+/* ── Directory wrapper ── */
+.mb-directory {
+  margin: 2px 0 10px;
+  padding-bottom: 55px;
+}
+
+/* ── Filter panel ── */
+.mb-directory-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 14px;
+  background: #f8f9fc;
+}
+.mb-field { display: flex; flex-direction: column; gap: 6px; }
+.mb-field label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #45508f;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.mb-field input, .mb-field select {
+  padding: 9px 12px;
+  border: 1px solid rgba(0, 0, 0, .14);
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fff;
+  transition: border-color .15s;
+}
+.mb-field input:focus, .mb-field select:focus {
+  outline: none;
+  border-color: #45508f;
+  box-shadow: 0 0 0 3px rgba(69, 80, 143, .1);
+}
+.mb-actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.mb-actions button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #45508f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.mb-actions button:hover { background: #363f73; }
+.mb-actions .mb-clear {
+  align-self: center;
+  font-size: 14px;
+  color: #45508f;
+}
+
+/* ── Meta row ── */
+.mb-directory-meta {
+  margin: 14px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ── User cards grid ── */
+.mb-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.mb-user-card {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .10);
+  border-radius: 14px;
+  background: #fbfcff;
+  padding: 15px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+  transition: box-shadow .15s, border-color .15s, background-color .15s;
+}
+
+.mb-user-card.mb-is-member {
+  border-color: rgba(69, 80, 143, .40);
+  background: linear-gradient(135deg, rgba(69, 80, 143, .08) 0%, #fbfcff 100%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .05), 0 0 0 1px rgba(69, 80, 143, .10);
+}
+.mb-user-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+  border-color: rgba(0, 0, 0, .18);
+}
+.mb-member-flag {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(69, 80, 143, .10);
+  color: #212C65;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.mb-member-star {
+  font-size: 15px;
+  color: #d4982a;
+}
+
+.mb-member-tooltip {
+  display: none;
+  white-space: nowrap;
+}
+
+.mb-member-flag:hover .mb-member-tooltip {
+  display: inline;
+}
+
+.mb-user-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.mb-directory img.mb-user-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .08);
+}
+.mb-user-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.mb-user-sub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0;
+  font-size: 13px;
+  color: #6e6e6e;
+}
+
+/* Compact badge dots now live in badges.css (.mb-badges-compact) */
+
+/* ── Tags ── */
+.mb-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.mb-tag-hire {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* ── Empty state ── */
+.mb-directory-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 20px;
+  color: #6e6e6e;
+}
+.mb-directory-empty a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #45508f;
+  font-weight: 600;
+}
+
+/* ── Pagination ── */
+.mb-pagination { margin-top: 16px; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .mb-directory-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mb-directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .mb-directory-filters { grid-template-columns: 1fr; }
+  .mb-directory-grid { grid-template-columns: 1fr; }
+  /* Keep Apply visible on small screens */
+  .mb-actions {
+    position: sticky;
+    bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background: linear-gradient(to top, #f8f9fc 65%, rgba(248, 249, 252, 0));
+    z-index: 2;
+  }
+}
+
+
+/* temp overrides for elementor theme */
+div.elementor-21597 div.elementor-element.elementor-element-83cdbad {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}

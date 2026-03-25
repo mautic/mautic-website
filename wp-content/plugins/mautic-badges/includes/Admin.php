@@ -58,6 +58,34 @@ class Admin
 
 			<hr />
 
+			<h2><?php echo esc_html(__('Quick setup examples', 'mautic-badges')); ?></h2>
+			<p><?php echo esc_html(__('Put these constants in your wp-config.php file. I intentionally read these from constants so secrets are not stored in the plugin database.', 'mautic-badges')); ?></p>
+			<p>
+				<code>DISCOURSE_BASE_URL</code>, <code>DISCOURSE_API_KEY</code>, <code>DISCOURSE_API_USERNAME</code>
+			</p>
+			<p>
+				<code>MB_INGEST_TOKEN</code> (used to authenticate the webhook/n8n POST)
+			</p>
+			<p>
+				Example snippet (do not copy the placeholder values):
+			</p>
+			<pre style="background:#f6f7fc;padding:12px;border-radius:10px;overflow:auto;">
+<code>define('DISCOURSE_BASE_URL', 'https://forum.mautic.org');
+define('DISCOURSE_API_KEY', '...');
+define('DISCOURSE_API_USERNAME', 'mautibot');
+define('MB_INGEST_TOKEN', 'your-shared-token');</code>
+			</pre>
+
+			<hr />
+
+			<h2><?php echo esc_html(__('Webhook / n8n ingest', 'mautic-badges')); ?></h2>
+			<p><?php echo esc_html(__('After constants are in wp-config.php, configure your webhook sender (n8n/relay) with these values.', 'mautic-badges')); ?></p>
+			<ul>
+				<li><code>POST /wp-json/mautic-badges/v1/ingest</code></li>
+				<li><strong>Header</strong>: <code>X-Bridge-Token: &lt;MB_INGEST_TOKEN&gt;</code></li>
+				<li><strong>JSON body</strong>: <code>{"username":"discourse_username"}</code> (or include <code>wp_user_id</code>)</li>
+			</ul>
+
 			<h2><?php echo esc_html(__('Shortcode', 'mautic-badges')); ?></h2>
 			<p><code>[mautic_badges]</code> (also supports legacy <code>[discourse_badges]</code>)</p>
 

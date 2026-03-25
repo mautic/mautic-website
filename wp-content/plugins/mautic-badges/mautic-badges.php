@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Mautic Badges
  * Description: Sync Discourse badges into WordPress and render them via shortcode. Supports n8n-forwarded webhook ingestion.
- * Version: 0.6.2
+ * Version: 1.0.0
  * Author: Mautic
  * License: GPLv2 or later
  * Text Domain: mautic-badges
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
-define('MB_VERSION', '0.1.0');
+define('MB_VERSION', '1.0.0');
 define('MB_PLUGIN_FILE', __FILE__);
 define('MB_PLUGIN_DIR', __DIR__);
 

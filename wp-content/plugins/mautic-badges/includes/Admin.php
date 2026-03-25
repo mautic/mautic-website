@@ -12,6 +12,12 @@ class Admin
 	{
 		add_action('admin_menu', [__CLASS__, 'register_menu']);
 		add_action('admin_post_mb_refresh_all_mapped_users', [__CLASS__, 'handle_refresh_all_mapped_users']);
+
+		// Directory opt-out checkbox in WP user profile settings.
+		add_action('show_user_profile', [__CLASS__, 'render_directory_opt_out_field']);
+		add_action('edit_user_profile', [__CLASS__, 'render_directory_opt_out_field']);
+		add_action('personal_options_update', [__CLASS__, 'save_directory_opt_out_field']);
+		add_action('edit_user_profile_update', [__CLASS__, 'save_directory_opt_out_field']);
 	}
 
 	public static function register_menu(): void
@@ -132,6 +138,72 @@ define('MB_INGEST_TOKEN', 'your-shared-token');</code>
 
 		wp_safe_redirect(add_query_arg(['page' => 'mautic-badges', 'refreshed' => 1], admin_url('tools.php')));
 		exit;
+	}
+
+	public static function render_directory_opt_out_field($user): void
+	{
+		if (!$user instanceof \WP_User) {
+			return;
+		}
+
+		$meta_key = (string) apply_filters('mb_directory_opt_out_meta_key', 'directory_opt_out');
+		$yes_value = (string) apply_filters('mb_directory_opt_out_meta_yes_value', '1');
+		$checked = ((string) get_user_meta((int) $user->ID, $meta_key, true) === $yes_value);
+		$nonce = wp_create_nonce('mb_directory_opt_out_' . (int) $user->ID);
+
+		?>
+		<h2><?php esc_html_e('Mautician directory', 'mautic-badges'); ?></h2>
+		<table class="form-table" role="presentation">
+			<tbody>
+				<tr>
+					<th scope="row">
+						<label for="mb_directory_opt_out"><?php esc_html_e('Opt out of listing', 'mautic-badges'); ?></label>
+					</th>
+					<td>
+						<label style="display:inline-flex;align-items:center;gap:10px;">
+							<input
+								id="mb_directory_opt_out"
+								name="mb_directory_opt_out"
+								type="checkbox"
+								value="1"
+								<?php checked($checked); ?>
+							/>
+							<?php esc_html_e('Hide this account from the Mautician directory', 'mautic-badges'); ?>
+						</label>
+						<input type="hidden" name="mb_directory_opt_out_nonce" value="<?php echo esc_attr((string) $nonce); ?>" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<?php
+	}
+
+	public static function save_directory_opt_out_field($user_id): void
+	{
+		$user_id = (int) $user_id;
+		if ($user_id <= 0) {
+			return;
+		}
+
+		if (!current_user_can('edit_user', $user_id)) {
+			return;
+		}
+
+		$nonce = isset($_POST['mb_directory_opt_out_nonce']) ? (string) wp_unslash($_POST['mb_directory_opt_out_nonce']) : '';
+		$nonce_action = 'mb_directory_opt_out_' . $user_id;
+		if ($nonce === '' || !wp_verify_nonce($nonce, $nonce_action)) {
+			return;
+		}
+
+		$meta_key = (string) apply_filters('mb_directory_opt_out_meta_key', 'directory_opt_out');
+		$yes_value = (string) apply_filters('mb_directory_opt_out_meta_yes_value', '1');
+
+		$enabled = isset($_POST['mb_directory_opt_out']) ? '1' : '';
+		if ($enabled === '1') {
+			update_user_meta($user_id, $meta_key, $yes_value);
+		} else {
+			delete_user_meta($user_id, $meta_key);
+		}
 	}
 }
 

@@ -65,6 +65,48 @@ body.mb-no-author-posts .jet-smart-filters-remove-filters.jet-filter {
 .mb-profile-breadcrumb {
   display: none !important;
 }
+
+.mb-directory-optout {
+  margin: 10px 0 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 14px;
+  background: rgba(69, 80, 143, .04);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mb-directory-optout label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.mb-directory-optout input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #45508f;
+}
+.mb-directory-optout-save.button.button-primary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 0;
+  background: #45508f;
+  color: #fff !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mb-directory-optout-save.button.button-primary:hover,
+.mb-directory-optout-save.button.button-primary:focus {
+  background: #212C65;
+}
+.mb-directory-optout-status {
+  color: #45508f;
+  font-weight: 700;
+  font-size: 13px;
+}
 .mb-directory-breadcrumb a {
   color: #45508f;
   text-decoration: none;

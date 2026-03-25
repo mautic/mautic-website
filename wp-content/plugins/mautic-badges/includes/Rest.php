@@ -59,6 +59,28 @@ class Rest
 				],
 			],
 		]);
+
+		register_rest_route(self::NAMESPACE, '/directory-opt-out', [
+			'methods' => 'POST',
+			'callback' => [__CLASS__, 'handle_directory_opt_out'],
+			'permission_callback' => static function () {
+				return is_user_logged_in();
+			},
+			'args' => [
+				'user_id' => [
+					'type' => 'integer',
+					'sanitize_callback' => 'absint',
+				],
+				'opt_out' => [
+					'type' => 'string',
+					'sanitize_callback' => 'sanitize_text_field',
+				],
+				'nonce' => [
+					'type' => 'string',
+					'sanitize_callback' => 'sanitize_text_field',
+				],
+			],
+		]);
 	}
 
 	private static function get_header(WP_REST_Request $req, string $name): string
@@ -145,6 +167,43 @@ class Rest
 		$res = Sync::refresh_user_by_username($username, $wp_user_id);
 		if (is_wp_error($res)) {
 			return new WP_REST_Response(['error' => $res->get_error_message()], 500);
+		}
+
+		return new WP_REST_Response(['ok' => true], 200);
+	}
+
+	public static function handle_directory_opt_out(WP_REST_Request $req): WP_REST_Response
+	{
+		$user_id = (int) $req->get_param('user_id');
+		$opt_out = (string) $req->get_param('opt_out');
+		$nonce   = (string) $req->get_param('nonce');
+
+		$user = wp_get_current_user();
+		if (!$user || !$user->ID) {
+			return new WP_REST_Response(['error' => 'Unauthorized'], 401);
+		}
+
+		if ($user_id <= 0) {
+			return new WP_REST_Response(['error' => 'user_id required'], 400);
+		}
+
+		// Self-service by default. Admins can manage other users.
+		if ((int) $user->ID !== (int) $user_id && !current_user_can('manage_options')) {
+			return new WP_REST_Response(['error' => 'Forbidden'], 403);
+		}
+
+		$nonce_action = 'mb_directory_opt_out_' . $user_id;
+		if ($nonce === '' || !wp_verify_nonce($nonce, $nonce_action)) {
+			return new WP_REST_Response(['error' => 'Invalid nonce'], 403);
+		}
+
+		$yes_value = (string) apply_filters('mb_directory_opt_out_yes_value', '1');
+		$enabled = ($opt_out === '1' || $opt_out === $yes_value);
+
+		if ($enabled) {
+			update_user_meta($user_id, (string) apply_filters('mb_directory_opt_out_meta_key', 'directory_opt_out'), $yes_value);
+		} else {
+			delete_user_meta($user_id, (string) apply_filters('mb_directory_opt_out_meta_key', 'directory_opt_out'));
 		}
 
 		return new WP_REST_Response(['ok' => true], 200);

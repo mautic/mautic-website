@@ -44,14 +44,22 @@
   padding: 10px 16px;
   border: 0;
   border-radius: 10px;
-  background: #45508f;
-  color: #fff;
+  background: #FDB933;
+  color: #212C65 !important;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
   transition: background .15s;
 }
-.mb-actions button:hover { background: #363f73; }
+.mb-actions button:hover {
+  background: #363f73;
+  color: #fff !important;
+}
+.mb-actions button:active {
+  background: #d9a200;
+  color: #212C65 !important;
+}
+.mb-actions button:focus { outline: none; }
 .mb-actions .mb-clear {
   align-self: center;
   font-size: 14px;

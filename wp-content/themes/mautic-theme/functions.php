@@ -140,6 +140,20 @@ function enqueue_mobile_menu_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_mobile_menu_scripts');
 
+add_action('wp_enqueue_scripts', function () {
+    wp_register_style(
+        'mautic-cta-panel',
+        get_stylesheet_directory_uri() . '/css/cta-panel.css',
+        [],
+        HELLO_ELEMENTOR_CHILD_VERSION
+    );
+}, 5);
+
+function register_cta_panel_widget($widgets_manager) {
+    require_once get_stylesheet_directory() . '/widgets/cta-panel-widget.php';
+    $widgets_manager->register(new \Elementor\CTA_Panel_Widget());
+}
+add_action('elementor/widgets/register', 'register_cta_panel_widget', 12);
 
 
 ?>

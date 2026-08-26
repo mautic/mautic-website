@@ -1,0 +1,47 @@
+.mautic-cta{
+    box-sizing:border-box;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    row-gap:16px;
+    text-align:center;
+    background:#425090;
+    color:#fff;
+    border-radius:12px;
+    padding:24px 40px;
+}
+
+.mautic-cta__title{
+    margin:30px 0 20px;
+    line-height:1.15;
+    font-family:"Titillium Web", Sans-serif;
+    font-size:52px;
+    font-weight:700;
+    color:inherit;
+}
+
+.mautic-cta__desc{
+    margin:0 auto;
+    max-width:60ch;
+    font-size:18px;
+    line-height:1.6;
+    color:inherit;
+}
+
+.mautic-cta__actions{ display:flex; justify-content:center; }
+
+.mautic-cta__btn{
+    display:inline-block;
+    font-weight:600;
+    background:#fdb933;
+    color:#000;
+    padding:12px 24px;
+    border-radius:50px;
+    text-decoration:underline;
+    transition:background-color .2s ease, color .2s ease, text-decoration-color .2s ease;
+}
+
+.mautic-cta__btn:hover{
+    text-decoration:none;
+}

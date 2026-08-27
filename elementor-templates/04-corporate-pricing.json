@@ -29,7 +29,8 @@
     "flex_align_items": "center",
     "background_background": "classic",
     "background_color": "#FFFFFF",
-    "_element_id": "tiers"
+    "_element_id": "tiers",
+    "_css_classes": "mautic-anchor"
    },
    "elements": [
     {

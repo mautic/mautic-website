@@ -1377,7 +1377,8 @@
     "flex_align_items": "center",
     "background_background": "classic",
     "background_color": "#E5F4F3",
-    "_element_id": "participatory"
+    "_element_id": "participatory",
+    "_css_classes": "mautic-anchor"
    },
    "elements": [
     {

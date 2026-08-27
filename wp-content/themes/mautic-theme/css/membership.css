@@ -194,12 +194,15 @@
 }
 
 /* ---------------------------------------------------------------------------
- * Skip target — the membership pages are long, so give the pricing table a
- * predictable scroll offset under the sticky header.
+ * Anchor scroll offset — the membership pages are long, so give in-page anchor
+ * targets a predictable offset under the sticky header.
+ *
+ * Targeted by class rather than by ID: this stylesheet loads site-wide, and
+ * #tiers / #sign-up / #participatory are generic enough that another page
+ * could reasonably use them. Add `mautic-anchor` to any container that carries
+ * an anchor ID. The tiers widget applies it to its own root.
  * ------------------------------------------------------------------------ */
 
-#tiers,
-#participatory,
-#sign-up {
+.mautic-anchor {
     scroll-margin-top: 100px;
 }

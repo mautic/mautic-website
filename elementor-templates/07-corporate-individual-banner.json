@@ -29,7 +29,8 @@
     "flex_align_items": "center",
     "background_background": "classic",
     "background_color": "#E5F4F3",
-    "_element_id": "sign-up"
+    "_element_id": "sign-up",
+    "_css_classes": "mautic-anchor"
    },
    "elements": [
     {

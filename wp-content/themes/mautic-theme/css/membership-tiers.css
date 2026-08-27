@@ -117,6 +117,8 @@
 .mautic-tiers__corner {
     width: 240px;
     min-width: 240px;
+    font-weight: 400;
+    text-align: left;
 }
 
 .mautic-tiers__head {

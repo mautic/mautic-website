@@ -172,7 +172,7 @@ class Membership_Tiers_Widget extends Widget_Base {
     }
 
     public function get_script_depends() {
-        return [ 'mautic-membership', 'mautic-membership-tiers' ];
+        return [ 'mautic-membership-tiers' ];
     }
 
     public function get_keywords() {
@@ -230,7 +230,7 @@ class Membership_Tiers_Widget extends Widget_Base {
             'label'   => __( 'Small print', 'mautic-theme' ),
             'type'    => Controls_Manager::WYSIWYG,
             'default' => __(
-                '<p>Where inherited benefits are of the same type they are replaced, not added together. For example, if Bronze includes 1 forum ad campaign per year and Silver includes 2, a Silver member receives 2 in total.</p>'
+                '<p>Where inherited benefits are of the same type, they are replaced rather than added together. For example, if Bronze includes 1 forum ad campaign per year and Silver includes 2, a Silver member receives 2 in total.</p>'
                 . '<p>Tier 2 and Tier 3 pricing requires evidence that your company headquarters is in the country selected. Need an invoice, or can\'t see your country or currency? Email <a href="mailto:membership@mautic.org">membership@mautic.org</a> or <a href="https://mau.tc/corporate-tiers">download the full tier chart</a>.</p>',
                 'mautic-theme'
             ),
@@ -315,7 +315,7 @@ class Membership_Tiers_Widget extends Widget_Base {
         $anchor_id    = ! empty( $settings['anchor_id'] ) ? sanitize_title( $settings['anchor_id'] ) : '';
         $new_tab_note = esc_html__( '(opens in a new tab)', 'mautic-theme' );
         ?>
-        <div class="mautic-tiers"<?php echo $anchor_id ? ' id="' . esc_attr( $anchor_id ) . '"' : ''; ?> data-mautic-tiers>
+        <div class="mautic-tiers mautic-anchor"<?php echo $anchor_id ? ' id="' . esc_attr( $anchor_id ) . '"' : ''; ?> data-mautic-tiers>
 
             <div class="mautic-tiers__picker">
                 <label class="mautic-tiers__label" for="<?php echo esc_attr( $select_id ); ?>">
@@ -350,7 +350,7 @@ class Membership_Tiers_Widget extends Widget_Base {
                     </caption>
                     <thead>
                         <tr>
-                            <td class="mautic-tiers__corner"><span class="mautic-sr-only"><?php esc_html_e( 'Benefit', 'mautic-theme' ); ?></span></td>
+                            <th scope="col" class="mautic-tiers__corner"><span class="mautic-sr-only"><?php esc_html_e( 'Benefit', 'mautic-theme' ); ?></span></th>
                             <?php foreach ( $tiers as $index => $tier ) : ?>
                                 <th scope="col" class="mautic-tiers__head<?php echo $index === $popular_index ? ' is-popular' : ''; ?>">
                                     <?php if ( $index === $popular_index ) : ?>

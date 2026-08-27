@@ -15,7 +15,17 @@ whenever the pages change substantially.
 library first (Safe SVG is already active on the site), then run:
 
 ```bash
+# GNU sed (Linux, and macOS with coreutils/gnu-sed installed)
+sed -i 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
+
+# BSD sed (macOS default) — note the mandatory empty backup suffix
 sed -i '' 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
+```
+
+Or portably, without worrying which sed you have:
+
+```bash
+perl -pi -e 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
 ```
 
 Adjust the upload path to wherever they actually land. Testimonial photos already point
@@ -116,6 +126,14 @@ page.
 
 No HTML widget needed. Add an empty container, set Content Width to Full, Min Height to
 6px, padding to 0, and give it the CSS class `mautic-hairline`.
+
+### Anchor targets
+
+Any container given an anchor ID also needs the CSS class `mautic-anchor`, which sets
+the scroll offset that clears the sticky header. `membership.css` targets that class
+rather than the IDs themselves, because it loads site-wide and `#tiers` / `#sign-up` /
+`#participatory` are generic enough that another page could use them. The templates
+already pair the two; keep them paired on anything you add.
 
 ## Accessibility notes carried into these templates
 

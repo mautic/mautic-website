@@ -155,5 +155,48 @@ function register_cta_panel_widget($widgets_manager) {
 }
 add_action('elementor/widgets/register', 'register_cta_panel_widget', 12);
 
+/**
+ * Register the membership page styles.
+ *
+ * membership.css is enqueued site-wide: the membership pages build several sections
+ * from Elementor HTML widgets and CSS classes, which can't declare a dependency of
+ * their own. membership-tiers.css/js stay registered-only and are pulled in by the
+ * Membership Tiers widget where it is used.
+ */
+add_action('wp_enqueue_scripts', function () {
+    wp_register_style(
+        'mautic-membership',
+        get_stylesheet_directory_uri() . '/css/membership.css',
+        [],
+        HELLO_ELEMENTOR_CHILD_VERSION
+    );
+
+    wp_register_style(
+        'mautic-membership-tiers',
+        get_stylesheet_directory_uri() . '/css/membership-tiers.css',
+        ['mautic-membership'],
+        HELLO_ELEMENTOR_CHILD_VERSION
+    );
+
+    wp_register_script(
+        'mautic-membership-tiers',
+        get_stylesheet_directory_uri() . '/js/membership-tiers.js',
+        [],
+        HELLO_ELEMENTOR_CHILD_VERSION,
+        true
+    );
+
+    wp_enqueue_style('mautic-membership');
+}, 5);
+
+/**
+ * Load & Register the Membership Tiers Widget.
+ */
+function register_membership_tiers_widget($widgets_manager) {
+    require_once get_stylesheet_directory() . '/widgets/membership-tiers-widget.php';
+    $widgets_manager->register(new \Elementor\Membership_Tiers_Widget());
+}
+add_action('elementor/widgets/register', 'register_membership_tiers_widget', 14);
+
 
 ?>

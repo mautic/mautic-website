@@ -243,8 +243,8 @@ class Membership_Tiers_Widget extends Widget_Base {
         $this->add_control( 'anchor_id', [
             'label'       => __( 'Anchor ID', 'mautic-theme' ),
             'type'        => Controls_Manager::TEXT,
-            'default'     => 'tiers',
-            'description' => __( 'Links elsewhere on the page scroll here. Leave blank for none.', 'mautic-theme' ),
+            'default'     => '',
+            'description' => __( 'Optional. Links elsewhere on the page scroll here. Leave blank if the section container around this widget already carries the anchor — two elements with the same ID is invalid HTML and breaks anchor navigation.', 'mautic-theme' ),
         ] );
 
         $this->end_controls_section();

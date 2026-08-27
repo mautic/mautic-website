@@ -22,7 +22,8 @@
         }
 
         function update() {
-            var index = parseInt( select.value, 10 );
+            var option = select.options[ select.selectedIndex ];
+            var index = option ? parseInt( option.getAttribute( 'data-tier' ), 10 ) : 0;
 
             if ( isNaN( index ) || index < 0 || index > 2 ) {
                 index = 0;
@@ -70,16 +71,20 @@
     }
 
     // Re-run inside the Elementor editor, where widgets are injected after load.
-    window.addEventListener( 'elementor/frontend/init', function () {
-        if ( ! window.elementorFrontend || ! window.elementorFrontend.hooks ) {
-            return;
-        }
-
-        window.elementorFrontend.hooks.addAction(
-            'frontend/element_ready/mautic_membership_tiers.default',
-            function ( $scope ) {
-                initAll( $scope && $scope[ 0 ] ? $scope[ 0 ] : undefined );
+    // Elementor dispatches this through jQuery's event system, so it has to be
+    // bound with jQuery — a native addEventListener never hears it.
+    if ( window.jQuery ) {
+        window.jQuery( window ).on( 'elementor/frontend/init', function () {
+            if ( ! window.elementorFrontend || ! window.elementorFrontend.hooks ) {
+                return;
             }
-        );
-    } );
+
+            window.elementorFrontend.hooks.addAction(
+                'frontend/element_ready/mautic_membership_tiers.default',
+                function ( $scope ) {
+                    initAll( $scope && $scope[ 0 ] ? $scope[ 0 ] : undefined );
+                }
+            );
+        } );
+    }
 }() );

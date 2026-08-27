@@ -323,7 +323,7 @@ class Membership_Tiers_Widget extends Widget_Base {
                 </label>
                 <select class="mautic-tiers__select" id="<?php echo esc_attr( $select_id ); ?>" data-mautic-tiers-select>
                     <?php foreach ( $country_index as $country => $index ) : ?>
-                        <option value="<?php echo esc_attr( $index ); ?>" <?php selected( $country, $default_country ); ?>>
+                        <option value="<?php echo esc_attr( $country ); ?>" data-tier="<?php echo esc_attr( $index ); ?>" <?php selected( $country, $default_country ); ?>>
                             <?php echo esc_html( $country ); ?>
                         </option>
                     <?php endforeach; ?>

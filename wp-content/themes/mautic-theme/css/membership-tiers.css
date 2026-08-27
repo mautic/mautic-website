@@ -295,9 +295,8 @@
 }
 
 @media (max-width: 767px) {
-    .mautic-tiers__corner,
-    .mautic-tiers__rowhead,
-    .mautic-tiers__grouprow th {
+    /* table-layout is fixed, so the header row alone sets the column widths. */
+    .mautic-tiers__corner {
         width: 170px;
         min-width: 170px;
     }

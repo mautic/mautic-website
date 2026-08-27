@@ -201,6 +201,3 @@ function register_membership_tiers_widget($widgets_manager) {
     $widgets_manager->register(new \Elementor\Membership_Tiers_Widget());
 }
 add_action('elementor/widgets/register', 'register_membership_tiers_widget', 14);
-
-
-?>

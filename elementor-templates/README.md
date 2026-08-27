@@ -113,7 +113,7 @@ exactly — no inline styles.
   <div class="mautic-spotlight__beam" aria-hidden="true"></div>
   <div class="mautic-spotlight__pool" aria-hidden="true"></div>
   <img class="mautic-spotlight__figure"
-       src="REPLACE_WITH_MEDIA_URL/mautibot-welcome.svg"
+       src="MEDIA_URL/mautibot-welcome.svg"
        alt="" role="presentation">
 </div>
 ```

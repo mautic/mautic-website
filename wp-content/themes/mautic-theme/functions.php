@@ -39,7 +39,7 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 function my_query_by_different_order( $query ) {
     $query->set( 'orderby', 'meta_value' );
     $query->set( 'meta_key', 'member_type' );
-	$query->set( 'order', 'DESC' ); // Set ascending order
+	$query->set( 'order', 'DESC' ); // Highest member tier first.
 
 }
 add_action( 'elementor/query/25', 'my_query_by_different_order' );

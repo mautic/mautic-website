@@ -1,0 +1,3425 @@
+{
+ "content": [
+  {
+   "id": "bf82296",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "84",
+     "right": "20",
+     "bottom": "92",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 32,
+     "column": "32",
+     "row": "32",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#4E5E9D"
+   },
+   "elements": [
+    {
+     "id": "a4a042c",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 62,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 18,
+       "column": "18",
+       "row": "18",
+       "isLinked": "true"
+      },
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "9766527",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><span class=\"mautic-kicker\">Mautic membership</span></p>",
+        "align": "left",
+        "text_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Roboto",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7e7757b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Put your brand behind the platform your business runs on",
+        "header_size": "h1",
+        "align": "left",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Titillium Web",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.08,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5878a7a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Mautic membership turns your support into visibility, influence and connection, and keeps the world's largest open source marketing automation project independent.</p>",
+        "align": "left",
+        "text_color": "rgba(255,255,255,0.88)",
+        "typography_typography": "custom",
+        "typography_font_family": "Roboto",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "px",
+         "size": 560,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "149e967",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_align_items": "center",
+        "flex_gap": {
+         "unit": "px",
+         "size": 20,
+         "column": "20",
+         "row": "20",
+         "isLinked": "true"
+        },
+        "padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": "false"
+        }
+       },
+       "elements": [
+        {
+         "id": "006f52e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "See corporate tiers",
+          "link": {
+           "url": "#tiers",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "3636638",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><a href=\"/become-a-member-of-mautic/individual/\">Joining as an individual? $100/yr →</a></p>",
+          "align": "left",
+          "text_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.5,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-dark"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "f7e6c85",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 38,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": "true"
+      },
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "1ff8a7b",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"mautic-spotlight\">\n  <div class=\"mautic-spotlight__beam\" aria-hidden=\"true\"></div>\n  <div class=\"mautic-spotlight__pool\" aria-hidden=\"true\"></div>\n  <img class=\"mautic-spotlight__figure\" src=\"MEDIA_URL/mautibot-welcome.svg\" alt=\"\" role=\"presentation\">\n</div>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8216124",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "mautic-hairline",
+    "min_height": {
+     "unit": "px",
+     "size": 6,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": "false"
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": "true"
+    }
+   },
+   "elements": [],
+   "isInner": false
+  },
+  {
+   "id": "eecca5b",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "76",
+     "right": "20",
+     "bottom": "76",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 20,
+     "column": "20",
+     "row": "20",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+   },
+   "elements": [
+    {
+     "id": "4c5bde7",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Membership pays your company back",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F1F1F",
+      "typography_typography": "custom",
+      "typography_font_family": "Titillium Web",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "cedebb6",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Reach, reputation and a say in the roadmap, while funding the platform your stack depends on.</p>",
+      "align": "center",
+      "text_color": "#525252",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "6cdd60e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": "true"
+      },
+      "flex_align_items": "stretch",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "96da2f5",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "38af861",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-bullhorn",
+           "library": "fa-solid"
+          },
+          "title_text": "Visibility where buyers look",
+          "description_text": "Your logo in the members directory, on event banners and the members slide, plus ad campaigns, sponsored posts and do-follow links at higher tiers. Reach an audience of marketers who already chose your ecosystem.",
+          "position": "top",
+          "title_size": "h3",
+          "text_align": "left",
+          "primary_color": "#00B49C",
+          "title_color": "#1F1F1F",
+          "description_color": "#525252",
+          "icon_space": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Titillium Web",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "title_typography_font_weight": "700",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Roboto",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          },
+          "icon_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "view": "framed",
+          "shape": "square",
+          "secondary_color": "#E5F4F3",
+          "icon_padding": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "rotate": {
+           "unit": "deg",
+           "size": 0,
+           "sizes": []
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": "true"
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "8f53295",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "8f85517",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-shield-alt",
+           "library": "fa-solid"
+          },
+          "title_text": "Protect your investment",
+          "description_text": "If Mautic powers your business, membership is how you protect that investment. Your fee funds releases, security and the roadmap, keeping the project independent and healthy.",
+          "position": "top",
+          "title_size": "h3",
+          "text_align": "left",
+          "primary_color": "#00B49C",
+          "title_color": "#1F1F1F",
+          "description_color": "#525252",
+          "icon_space": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Titillium Web",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "title_typography_font_weight": "700",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Roboto",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          },
+          "icon_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "view": "framed",
+          "shape": "square",
+          "secondary_color": "#E5F4F3",
+          "icon_padding": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "rotate": {
+           "unit": "deg",
+           "size": 0,
+           "sizes": []
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": "true"
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "fc22130",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "045117b",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-award",
+           "library": "fa-solid"
+          },
+          "title_text": "Recognition your customers notice",
+          "description_text": "A tiered member badge, a public thank-you, and your name beside the companies leading open source marketing. Customers increasingly buy from businesses that give back.",
+          "position": "top",
+          "title_size": "h3",
+          "text_align": "left",
+          "primary_color": "#00B49C",
+          "title_color": "#1F1F1F",
+          "description_color": "#525252",
+          "icon_space": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Titillium Web",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "title_typography_font_weight": "700",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Roboto",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          },
+          "icon_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "view": "framed",
+          "shape": "square",
+          "secondary_color": "#E5F4F3",
+          "icon_padding": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "rotate": {
+           "unit": "deg",
+           "size": 0,
+           "sizes": []
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": "true"
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a2557a7",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "20",
+     "bottom": "56",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 20,
+     "column": "20",
+     "row": "20",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#F4F4F4"
+   },
+   "elements": [
+    {
+     "id": "9872ed9",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p><strong>IN THE COMPANY OF MEMBERS LIKE</strong></p>",
+      "align": "center",
+      "text_color": "#6f6f6f",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "31fefc0",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<!-- LOOP GRID GOES HERE.\n     Delete this HTML widget and drop an Elementor Pro Loop Grid in its place.\n     Source: Post Type = member. Order by member_type, descending.\n     Columns: 4 desktop / 3 tablet / 2 mobile. Posts per page: 8.\n     Loop template: a single Featured Image widget, image size 'medium',\n     linked to the member post.\n     Add CSS class 'mautic-logowall' to the Loop Grid widget. -->\n<p style=\"text-align:center;padding:40px;border:1px dashed #c6c6c6;border-radius:11px;color:#525252\">Member logo wall — replace with a Loop Grid (see the comment in this widget).</p>"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "9dcb88e",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p><a href=\"/members-partners/\">See all members and partners →</a></p>",
+      "align": "center",
+      "text_color": "#4E5E9D",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 15,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      },
+      "_css_classes": "mautic-on-light"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "bd686fd",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1240,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "76",
+     "right": "20",
+     "bottom": "76",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 20,
+     "column": "20",
+     "row": "20",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "_element_id": "tiers",
+    "_css_classes": "mautic-anchor"
+   },
+   "elements": [
+    {
+     "id": "cfecdb2",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Corporate membership tiers",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F1F1F",
+      "typography_typography": "custom",
+      "typography_font_family": "Titillium Web",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "0aa1883",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Priced fairly wherever you are. Select your headquarters country to see your pricing.</p>",
+      "align": "center",
+      "text_color": "#525252",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "58a2fc6",
+     "elType": "widget",
+     "widgetType": "mautic_membership_tiers",
+     "settings": {
+      "popular_tier": "Bronze",
+      "default_country": "United States",
+      "selector_label": "Company HQ country",
+      "table_caption": "Corporate membership tiers, prices and benefits",
+      "anchor_id": ""
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1534b76",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 40,
+     "column": "40",
+     "row": "40",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#2C355A"
+   },
+   "elements": [
+    {
+     "id": "b1d10e7",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 45,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 18,
+       "column": "18",
+       "row": "18",
+       "isLinked": "true"
+      },
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "7eabe3a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Where your membership goes",
+        "header_size": "h2",
+        "align": "left",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Titillium Web",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "69adc1e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Mautic is independent: no corporate owner, no venture capital. Membership is the budget that keeps it moving. Every dollar goes to the project.</p>",
+        "align": "left",
+        "text_color": "rgba(255,255,255,0.85)",
+        "typography_typography": "custom",
+        "typography_font_family": "Roboto",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "091d584",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "MEDIA_URL/mautibot-happy.svg",
+         "id": "",
+         "alt": "",
+         "source": "library"
+        },
+        "image_size": "full",
+        "align": "left",
+        "width": {
+         "unit": "px",
+         "size": 180,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "eb16372",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 55,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": "true"
+      },
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "6f3ef77",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16",
+         "isLinked": "true"
+        },
+        "flex_align_items": "stretch",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": "false"
+        }
+       },
+       "elements": [
+        {
+         "id": "0336dcb",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "a597e50",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-rocket",
+             "library": "fa-solid"
+            },
+            "title_text": "Product features",
+            "description_text": "Direct progress on the features on Mautic's roadmap.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "85d8ce5",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "084b6fb",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-users",
+             "library": "fa-solid"
+            },
+            "title_text": "In-person sprints",
+            "description_text": "Bringing contributors together to build, face to face.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "84d9ee4",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "0e65972",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-route",
+             "library": "fa-solid"
+            },
+            "title_text": "Roadmap development",
+            "description_text": "Turning community priorities into a shippable plan.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "757b505",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "3644a68",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-user-tie",
+             "library": "fa-solid"
+            },
+            "title_text": "Project lead",
+            "description_text": "Dedicated leadership keeping the project moving.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "e2c0be2",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "854d6fa",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-hand-holding-usd",
+             "library": "fa-solid"
+            },
+            "title_text": "Bounties",
+            "description_text": "Rewarding contributors for tackling priority issues.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "eae27d7",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.08)",
+          "padding": {
+           "unit": "px",
+           "top": "22",
+           "right": "20",
+           "bottom": "22",
+           "left": "20",
+           "isLinked": "false"
+          },
+          "flex_gap": {
+           "unit": "px",
+           "size": 0,
+           "column": "0",
+           "row": "0",
+           "isLinked": "true"
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "11",
+           "right": "11",
+           "bottom": "11",
+           "left": "11",
+           "isLinked": "true"
+          }
+         },
+         "elements": [
+          {
+           "id": "274ad47",
+           "elType": "widget",
+           "widgetType": "icon-box",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-lightbulb",
+             "library": "fa-solid"
+            },
+            "title_text": "Keeping the lights on",
+            "description_text": "Infrastructure, tooling and everyday running costs.",
+            "position": "top",
+            "title_size": "h3",
+            "text_align": "left",
+            "primary_color": "#FDB933",
+            "title_color": "#FFFFFF",
+            "description_color": "rgba(255,255,255,0.75)",
+            "icon_space": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "title_typography_typography": "custom",
+            "title_typography_font_family": "Titillium Web",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "title_typography_font_weight": "700",
+            "description_typography_typography": "custom",
+            "description_typography_font_family": "Roboto",
+            "description_typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "description_typography_line_height": {
+             "unit": "em",
+             "size": 1.6,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "621bf66",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "76",
+     "right": "20",
+     "bottom": "76",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 20,
+     "column": "20",
+     "row": "20",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+   },
+   "elements": [
+    {
+     "id": "0266e33",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "We'll let our members do the talking",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F1F1F",
+      "typography_typography": "custom",
+      "typography_font_family": "Titillium Web",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "38db3ae",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Why companies renew, in their own words.</p>",
+      "align": "center",
+      "text_color": "#525252",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "3cec07e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_gap": {
+       "unit": "px",
+       "size": 24,
+       "column": "24",
+       "row": "24",
+       "isLinked": "true"
+      },
+      "flex_align_items": "stretch",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "ec8ce6a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "979d472",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>“Since Mautic is part of Leuchtfeuer's business, it is a no-brainer for us to be a Mautic member – and thus to support the project in staying financially healthy and independent, plus to publicly demonstrate our commitment.”</p>",
+          "align": "left",
+          "text_color": "#393939",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "c0e190d",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": "true"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": "false"
+          }
+         },
+         "elements": [
+          {
+           "id": "ca46c1b",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "https://mautic.org/wp-content/uploads/2024/11/Ekke_large-Ekkehard-Gumbel-scaled-e1733934400450.jpeg",
+             "id": "",
+             "alt": "Ekkehard Gümbel",
+             "source": "library"
+            },
+            "image_size": "full",
+            "align": "left",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e96ed47",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "width": {
+             "unit": "%",
+             "size": 75,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 2,
+             "column": "2",
+             "row": "2",
+             "isLinked": "true"
+            },
+            "flex_align_items": "flex-start",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": "false"
+            }
+           },
+           "elements": [
+            {
+             "id": "3b8a614",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><strong>Ekkehard Gümbel</strong></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "45fbc6d",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>Owner, Leuchtfeuer Digital Marketing</p>",
+              "align": "left",
+              "text_color": "#6f6f6f",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "63dc7ed",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><span class=\"mautic-tierpill\">Gold member</span></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": true
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "74db120",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "060ad92",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>“As active contributors to Mautic's code base, it was logical for us to also support the project to ensure its financial security. More budget means more community growth, which benefits us all.”</p>",
+          "align": "left",
+          "text_color": "#393939",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "705f217",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": "true"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": "false"
+          }
+         },
+         "elements": [
+          {
+           "id": "bcbe336",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "https://mautic.org/wp-content/uploads/2025/01/npr-1x1-1-scaled.jpg",
+             "id": "",
+             "alt": "Norman Pracht",
+             "source": "library"
+            },
+            "image_size": "full",
+            "align": "left",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9cfdf10",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "width": {
+             "unit": "%",
+             "size": 75,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 2,
+             "column": "2",
+             "row": "2",
+             "isLinked": "true"
+            },
+            "flex_align_items": "flex-start",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": "false"
+            }
+           },
+           "elements": [
+            {
+             "id": "115f895",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><strong>Norman Pracht</strong></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "13fe9d8",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>General Manager, Webmecanik</p>",
+              "align": "left",
+              "text_color": "#6f6f6f",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "d1c38a0",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><span class=\"mautic-tierpill\">Gold member</span></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": true
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "01161aa",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "57aeee3",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>“We are constantly developing useful tools with Mautic that will be a part of our company's growth and development. Becoming a member just makes sense.”</p>",
+          "align": "left",
+          "text_color": "#393939",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "577ef11",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": "true"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": "false"
+          }
+         },
+         "elements": [
+          {
+           "id": "6da9003",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "https://mautic.org/wp-content/uploads/2025/01/ilona-sot.jpeg",
+             "id": "",
+             "alt": "Ilona Sot",
+             "source": "library"
+            },
+            "image_size": "full",
+            "align": "left",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "289dff0",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "width": {
+             "unit": "%",
+             "size": 75,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 2,
+             "column": "2",
+             "row": "2",
+             "isLinked": "true"
+            },
+            "flex_align_items": "flex-start",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": "false"
+            }
+           },
+           "elements": [
+            {
+             "id": "9b04d15",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><strong>Ilona Sot</strong></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "be83ab3",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>Senior Project Manager, Comarch SA</p>",
+              "align": "left",
+              "text_color": "#6f6f6f",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "e165421",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><span class=\"mautic-tierpill\">Community member</span></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": true
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "9188905",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+         "unit": "px",
+         "top": "32",
+         "right": "28",
+         "bottom": "32",
+         "left": "28",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 16,
+         "column": "16",
+         "row": "16",
+         "isLinked": "true"
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "15",
+         "right": "15",
+         "bottom": "15",
+         "left": "15",
+         "isLinked": "true"
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": "true"
+        },
+        "border_color": "#E0E0E0"
+       },
+       "elements": [
+        {
+         "id": "539fd53",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>“We're excited to join the Mautic Community, strengthening our commitment to open source and the collaborative spirit that drives innovation.”</p>",
+          "align": "left",
+          "text_color": "#393939",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "cb70ab3",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "unit": "px",
+           "size": 14,
+           "column": "14",
+           "row": "14",
+           "isLinked": "true"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": "false"
+          }
+         },
+         "elements": [
+          {
+           "id": "ac1dd20",
+           "elType": "widget",
+           "widgetType": "image",
+           "settings": {
+            "image": {
+             "url": "https://mautic.org/wp-content/uploads/2025/01/Mikko_Hamalainen.jpg",
+             "id": "",
+             "alt": "Mikko Hämäläinen",
+             "source": "library"
+            },
+            "image_size": "full",
+            "align": "left",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e4a6222",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "width": {
+             "unit": "%",
+             "size": 75,
+             "sizes": []
+            },
+            "flex_gap": {
+             "unit": "px",
+             "size": 2,
+             "column": "2",
+             "row": "2",
+             "isLinked": "true"
+            },
+            "flex_align_items": "flex-start",
+            "padding": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": "false"
+            }
+           },
+           "elements": [
+            {
+             "id": "555d670",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><strong>Mikko Hämäläinen</strong></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 15,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "335f535",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p>CEO, Druid</p>",
+              "align": "left",
+              "text_color": "#6f6f6f",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "f340f1b",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "<p><span class=\"mautic-tierpill\">Community member</span></p>",
+              "align": "left",
+              "text_color": "#1F1F1F",
+              "typography_typography": "custom",
+              "typography_font_family": "Roboto",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_line_height": {
+               "unit": "em",
+               "size": 1.4,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": true
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "f718499",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#E5F4F3",
+    "_element_id": "sign-up",
+    "_css_classes": "mautic-anchor"
+   },
+   "elements": [
+    {
+     "id": "6c9882b",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 18,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": "true"
+      },
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "077e29b",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "MEDIA_URL/mautibot-information.svg",
+         "id": "",
+         "alt": "",
+         "source": "library"
+        },
+        "image_size": "full",
+        "align": "center",
+        "width": {
+         "unit": "px",
+         "size": 110,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "c24cd76",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 55,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 8,
+       "column": "8",
+       "row": "8",
+       "isLinked": "true"
+      },
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "19f3cd3",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Joining as an individual?",
+        "header_size": "h2",
+        "align": "left",
+        "title_color": "#1F1F1F",
+        "typography_typography": "custom",
+        "typography_font_family": "Titillium Web",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "03c6b06",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>$100 per year, pro-rated based on your country. Vote in the General Assembly, stand for Council, and shape Mautic's future directly.</p>",
+        "align": "left",
+        "text_color": "#525252",
+        "typography_typography": "custom",
+        "typography_font_family": "Roboto",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "fe131d7",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "%",
+       "size": 27,
+       "sizes": []
+      },
+      "flex_gap": {
+       "unit": "px",
+       "size": 16,
+       "column": "16",
+       "row": "16",
+       "isLinked": "true"
+      },
+      "flex_align_items": "flex-end",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": "false"
+      }
+     },
+     "elements": [
+      {
+       "id": "c52f1bd",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Individual membership",
+        "link": {
+         "url": "/become-a-member-of-mautic/individual/",
+         "is_external": "",
+         "nofollow": "",
+         "custom_attributes": ""
+        },
+        "align": "left"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "20f0759",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 820,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "76",
+     "right": "20",
+     "bottom": "76",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#FFFFFF"
+   },
+   "elements": [
+    {
+     "id": "d96409b",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Questions, answered",
+      "header_size": "h2",
+      "align": "center",
+      "title_color": "#1F1F1F",
+      "typography_typography": "custom",
+      "typography_font_family": "Titillium Web",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "db8e1af",
+     "elType": "widget",
+     "widgetType": "nested-accordion",
+     "settings": {
+      "items": [
+       {
+        "item_title": "Can we pay by invoice instead of card?",
+        "_id": "502e4a1",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "How does regional pricing work?",
+        "_id": "b1a59b3",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "My country or currency isn't listed. What now?",
+        "_id": "d6baf65",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "Do benefits stack as we move up tiers?",
+        "_id": "eda80a3",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "What about individual membership?",
+        "_id": "3905972",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "Who do I talk to before committing?",
+        "_id": "4734ba6",
+        "element_css_id": ""
+       }
+      ],
+      "default_state": "all_collapsed",
+      "max_items_expended": "one",
+      "title_tag": "h3",
+      "faq_schema": "yes",
+      "accordion_item_title_space_between": {
+       "unit": "px",
+       "size": 0,
+       "sizes": []
+      },
+      "accordion_item_title_distance_from_content": {
+       "unit": "px",
+       "size": 0,
+       "sizes": []
+      },
+      "title_normal_color": "#1F1F1F",
+      "accordion_item_title_icon": {
+       "value": "fas fa-plus",
+       "library": "fa-solid"
+      },
+      "accordion_item_title_icon_active": {
+       "value": "fas fa-minus",
+       "library": "fa-solid"
+      },
+      "icon_normal_color": "#4E5E9D",
+      "header_typography_typography": "custom",
+      "header_typography_font_family": "Titillium Web",
+      "header_typography_font_size": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "header_typography_font_weight": "600"
+     },
+     "elements": [
+      {
+       "id": "a4f2367",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "cfa0860",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Yes. Email <a href=\"mailto:membership@mautic.org\">membership@mautic.org</a> and we'll issue an invoice so you can pay in advance by bank transfer.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "8c19f57",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "36660e5",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Pricing is tiered by country (loosely based on the Big Mac Index) so membership is affordable worldwide. To qualify for Tier 2 or Tier 3 pricing you'll need to provide evidence that your company's headquarters is in the selected country — for example company formation certificates supported by bank account information.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "f766406",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "e56954b",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Some currencies can't be displayed due to Stripe limitations. If you don't see your country or expected currency, email <a href=\"mailto:membership@mautic.org\">membership@mautic.org</a> and we'll sort it out directly.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "06138bc",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "8f121ce",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Benefits of the same type are replaced rather than compounded. If Bronze includes 1 forum ad campaign and Silver includes 2, Silver members get 2 (not 3).</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "7a614fd",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "7f100b7",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Individuals join for $100/year, pro-rated based on your country. You get a vote in the General Assembly, can stand in Council and leadership elections, and directly shape governance. Regular contributors may also qualify for the free participatory route.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "63923f4",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "4",
+         "bottom": "18",
+         "left": "4",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 8,
+         "column": "8",
+         "row": "8",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "d947bf0",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>A human, gladly: <a href=\"mailto:membership@mautic.org\">membership@mautic.org</a>. We usually reply within a day.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.6,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "07cdfd2",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "mautic-hairline",
+    "min_height": {
+     "unit": "px",
+     "size": 6,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": "false"
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0",
+     "isLinked": "true"
+    }
+   },
+   "elements": [],
+   "isInner": false
+  },
+  {
+   "id": "e3796ae",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1140,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "20",
+     "right": "20",
+     "bottom": "60",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 8,
+     "column": "8",
+     "row": "8",
+     "isLinked": "true"
+    },
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#4E5E9D"
+   },
+   "elements": [
+    {
+     "id": "d395771",
+     "elType": "widget",
+     "widgetType": "mautic_cta_panel",
+     "settings": {
+      "title": "Your customers already trust Mautic. Show them you're behind it.",
+      "description": "<p>Join in five minutes with a card, or email us for an invoice.</p>",
+      "button_text": "Choose your tier",
+      "button_url": {
+       "url": "#tiers",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "new_tab": "",
+      "min_height": {
+       "unit": "px",
+       "size": 0,
+       "sizes": []
+      },
+      "bg_color": "#4E5E9D",
+      "title_typo_typography": "custom",
+      "title_typo_font_family": "Titillium Web",
+      "title_typo_font_size": {
+       "unit": "px",
+       "size": 38,
+       "sizes": []
+      },
+      "title_typo_font_weight": "700"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "92c8c96",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p><a href=\"mailto:membership@mautic.org\">Talk to a human</a></p>",
+      "align": "center",
+      "text_color": "#FFFFFF",
+      "typography_typography": "custom",
+      "typography_font_family": "Roboto",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 16,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      },
+      "_css_classes": "mautic-on-dark"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Corporate membership page",
+ "type": "page"
+}

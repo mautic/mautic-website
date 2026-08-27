@@ -4,6 +4,9 @@
  * Colour notes: the check and dash glyphs carry the meaning of every body cell, so
  * they use #00796b and #6f6f6f (5.32:1 and 5.02:1 on white) rather than the lighter
  * #00B49D / #c6c6c6 in the design reference, which fail WCAG AA at 2.62:1 and 1.71:1.
+ *
+ * This stylesheet is registered with membership.css as a dependency and relies on
+ * .mautic-sr-only and .mautic-anchor from it.
  */
 
 .mautic-tiers {
@@ -23,18 +26,6 @@
 
     font-family: "Roboto", sans-serif;
     color: var(--mautic-tiers-ink);
-}
-
-.mautic-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
 }
 
 /* ---------- country picker ---------- */

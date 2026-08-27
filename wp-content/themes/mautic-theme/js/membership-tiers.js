@@ -71,20 +71,28 @@
     }
 
     // Re-run inside the Elementor editor, where widgets are injected after load.
-    // Elementor dispatches this through jQuery's event system, so it has to be
-    // bound with jQuery — a native addEventListener never hears it.
-    if ( window.jQuery ) {
-        window.jQuery( window ).on( 'elementor/frontend/init', function () {
-            if ( ! window.elementorFrontend || ! window.elementorFrontend.hooks ) {
-                return;
-            }
+    //
+    // elementor/frontend/init fires once, and this script may be parsed either
+    // side of it depending on where it lands in the footer. So try to register
+    // straight away, and only fall back to waiting for the event if Elementor
+    // isn't ready yet. The event is dispatched through jQuery's event system,
+    // so a native addEventListener would never hear it.
+    function registerElementorHook() {
+        if ( ! window.elementorFrontend || ! window.elementorFrontend.hooks ) {
+            return false;
+        }
 
-            window.elementorFrontend.hooks.addAction(
-                'frontend/element_ready/mautic_membership_tiers.default',
-                function ( $scope ) {
-                    initAll( $scope && $scope[ 0 ] ? $scope[ 0 ] : undefined );
-                }
-            );
-        } );
+        window.elementorFrontend.hooks.addAction(
+            'frontend/element_ready/mautic_membership_tiers.default',
+            function ( $scope ) {
+                initAll( $scope && $scope[ 0 ] ? $scope[ 0 ] : undefined );
+            }
+        );
+
+        return true;
+    }
+
+    if ( ! registerElementorHook() && window.jQuery ) {
+        window.jQuery( window ).on( 'elementor/frontend/init', registerElementorHook );
     }
 }() );

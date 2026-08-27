@@ -178,10 +178,14 @@ add_action('wp_enqueue_scripts', function () {
         HELLO_ELEMENTOR_CHILD_VERSION
     );
 
+    // jquery is a dependency only for the Elementor editor fallback: Elementor
+    // dispatches elementor/frontend/init through jQuery's event system, and
+    // without the dependency this script can be printed before jQuery exists.
+    // The front-end price switching itself is plain DOM.
     wp_register_script(
         'mautic-membership-tiers',
         get_stylesheet_directory_uri() . '/js/membership-tiers.js',
-        [],
+        ['jquery'],
         HELLO_ELEMENTOR_CHILD_VERSION,
         true
     );

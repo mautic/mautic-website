@@ -365,7 +365,7 @@ class Membership_Tiers_Widget extends Widget_Base {
                                         <?php echo esc_html( '$' . number_format( $tier['prices'][ $default_index ] ) ); ?>
                                     </span>
                                     <span class="mautic-tiers__per"><?php esc_html_e( 'per year', 'mautic-theme' ); ?></span>
-                                    <a class="mautic-tiers__join" href="<?php echo esc_url( $tier['url'] ); ?>" target="_blank" rel="noopener">
+                                    <a class="mautic-tiers__join" href="<?php echo esc_url( $tier['url'] ); ?>" target="_blank" rel="noopener noreferrer">
                                         <?php esc_html_e( 'Join', 'mautic-theme' ); ?>
                                         <span class="mautic-sr-only">
                                             <?php

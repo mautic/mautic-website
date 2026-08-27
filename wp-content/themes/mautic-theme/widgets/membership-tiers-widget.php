@@ -304,9 +304,28 @@ class Membership_Tiers_Widget extends Widget_Base {
 
         $default_country = $settings['default_country'] ?? 'United States';
         if ( ! isset( $country_index[ $default_country ] ) ) {
-            $default_country = 'United States';
+            // Fall back to a country actually in the list rather than a hard-coded
+            // name, so the selected option and the displayed prices can't disagree
+            // if the country list is ever filtered.
+            $default_country = isset( $country_index['United States'] )
+                ? 'United States'
+                : (string) key( $country_index );
         }
         $default_index = $country_index[ $default_country ] ?? 0;
+
+        // These two are accessible names — for the country control, and for the
+        // table and the scroll region that points at its caption — so an empty
+        // value is not cosmetic. Either control can be cleared in the editor, so
+        // fall back at render time.
+        $selector_label = isset( $settings['selector_label'] ) ? trim( $settings['selector_label'] ) : '';
+        if ( '' === $selector_label ) {
+            $selector_label = __( 'Company HQ country', 'mautic-theme' );
+        }
+
+        $table_caption = isset( $settings['table_caption'] ) ? trim( $settings['table_caption'] ) : '';
+        if ( '' === $table_caption ) {
+            $table_caption = __( 'Corporate membership tiers, prices and benefits', 'mautic-theme' );
+        }
 
         $uid          = 'mautic-tiers-' . $this->get_id();
         $select_id    = $uid . '-country';
@@ -319,7 +338,7 @@ class Membership_Tiers_Widget extends Widget_Base {
 
             <div class="mautic-tiers__picker">
                 <label class="mautic-tiers__label" for="<?php echo esc_attr( $select_id ); ?>">
-                    <?php echo esc_html( $settings['selector_label'] ?? '' ); ?>
+                    <?php echo esc_html( $selector_label ); ?>
                 </label>
                 <select class="mautic-tiers__select" id="<?php echo esc_attr( $select_id ); ?>" data-mautic-tiers-select>
                     <?php foreach ( $country_index as $country => $index ) : ?>
@@ -346,7 +365,7 @@ class Membership_Tiers_Widget extends Widget_Base {
             <div class="mautic-tiers__scroll" tabindex="0" role="region" aria-labelledby="<?php echo esc_attr( $caption_id ); ?>">
                 <table class="mautic-tiers__table">
                     <caption class="mautic-sr-only" id="<?php echo esc_attr( $caption_id ); ?>">
-                        <?php echo esc_html( $settings['table_caption'] ?? '' ); ?>
+                        <?php echo esc_html( $table_caption ); ?>
                     </caption>
                     <thead>
                         <tr>

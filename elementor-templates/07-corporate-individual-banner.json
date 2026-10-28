@@ -67,7 +67,7 @@
        "widgetType": "image",
        "settings": {
         "image": {
-         "url": "MEDIA_URL/mautibot-information.svg",
+         "url": "/wp-content/themes/mautic-theme/assets/membership/mautibot-information.svg",
          "id": "",
          "alt": "",
          "source": "library"

@@ -58,3 +58,6 @@ node_modules/
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# Windows Alternate Data Streams copied into WSL
+*:Zone.Identifier

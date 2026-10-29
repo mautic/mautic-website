@@ -50,6 +50,7 @@ the templates and the design diverge visibly, and it diverges in every section.
 | Hand-drawn inline SVG icons | Font Awesome placeholders | So the import renders something sensible immediately. Swap for the uploaded SVGs in the editor. |
 | FAQ as bordered white cards | Elementor's Nested Accordion, unstyled | Real buttons, arrow-key support and FAQ schema. The border and radius are set in the editor, not in the template. |
 | Decorative quote mark above the testimonial | Not in the template | One SVG for one card. Add it in the editor if it's wanted. |
+| Kicker pill in solid pale cyan with teal ink | White ink on the shared translucent pill | The shared `mautic-kicker` is a veil over the band behind it. Teal ink on that veil over the hero blue is **1.19:1**; white is **5.36:1**. The pill is fainter than the design draws it, which is the cost of keeping one kicker rule across all three pages. |
 
 The community photo and Sven's photo in these renders are the real images from
 mautic.org, at the URLs the templates use. Nothing there is a placeholder.

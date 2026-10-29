@@ -19,7 +19,6 @@
      "isLinked": "false"
     },
     "flex_direction": "row",
-    "flex_wrap": "wrap",
     "flex_gap": {
      "unit": "px",
      "size": 40,
@@ -39,7 +38,7 @@
       "content_width": "full",
       "width": {
        "unit": "%",
-       "size": 58,
+       "size": 56,
        "sizes": []
       },
       "flex_direction": "column",
@@ -66,9 +65,9 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Support Mautic</p>",
+        "editor": "<p><span class=\"mautic-kicker\">Support Mautic</span></p>",
         "align": "left",
-        "text_color": "#00796B",
+        "text_color": "#FFFFFF",
         "typography_typography": "custom",
         "typography_font_family": "Roboto",
         "typography_font_size": {
@@ -80,8 +79,7 @@
          "unit": "em",
          "size": 1.62,
          "sizes": []
-        },
-        "_css_classes": "mautic-kicker"
+        }
        },
        "elements": [],
        "isInner": false
@@ -236,7 +234,7 @@
       "content_width": "full",
       "width": {
        "unit": "%",
-       "size": 42,
+       "size": 40,
        "sizes": []
       },
       "flex_direction": "column",

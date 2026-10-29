@@ -168,7 +168,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -217,7 +218,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -266,7 +268,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -315,7 +318,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -364,7 +368,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -413,7 +418,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false

@@ -210,7 +210,12 @@ mautic.org and need no change.
 and Pale Cyan `#E5F4F3`. Pale Cyan is the one the membership README asks you to add;
 if you have already done that, there is nothing to do here.
 
-**3. Give the page the slug `support-mautic`.** `support.css` is enqueued on that slug
+**3. Check the individual membership page exists.** The "Explore individual
+membership" button points at `/become-a-member-of-mautic/individual/`, which is
+created by PR #62, phase 4. **Do not put this page live before that one** — or point
+the button back at `/become-a-member-of-mautic/#sign-up` until it is there.
+
+**4. Give the page the slug `support-mautic`.** `support.css` is enqueued on that slug
 only, rather than site-wide, because it is one page. If you need a different slug — or
 a second one on staging — filter it:
 
@@ -288,12 +293,17 @@ else — an Icon List puts an `<i>` in front of each one, which some screen read
 announce.
 
 ```html
-<ul class="mautic-ticklist">
+<ul role="list" class="mautic-ticklist">
   <li>Support Mautic annually</li>
   <li>Participate in member voting</li>
   <li>Regional rates shown before joining</li>
 </ul>
 ```
+
+`role="list"` is not redundant here. Safari drops list semantics from a `<ul>` whose
+`list-style` is `none` and whose marker is empty generated content, which is exactly
+what this list is — VoiceOver would read the items but not announce them as a list or
+let you jump between them. Keep the attribute on any tick list you add.
 
 ### Aligning the calls to action
 
@@ -320,6 +330,15 @@ that is a global kit decision, not something to introduce on one page.
 
 **Anchors.** `#membership` and `#transparency` are on containers that also carry
 `mautic-anchor`, so the scroll offset clears the sticky header. Keep the two paired.
+
+**Column widths.** The multi-column rows set an explicit percentage width on each
+child and do *not* set Flex Wrap. An Elementor container with no width is 100% wide,
+so a row of three cards with no widths puts one card per line; and a row that does
+wrap, whose children add up to 100% plus a gap, pushes its last column onto a second
+line. Leaving Flex Wrap alone gives `nowrap` on desktop, and Elementor's own
+`max-width: 767px` rule sets every container back to 100% wide and wrapping — so the
+phone layout needs no second set of widths. If you add a column, give it a width and
+leave the gap room.
 
 ## Accessibility notes carried into these templates
 

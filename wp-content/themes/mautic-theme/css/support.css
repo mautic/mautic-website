@@ -20,9 +20,15 @@
  *
  * Elementor containers take their margins from custom properties
  * (.e-con sets --margin-top: 0px, and margin-block-start reads through it), so
- * setting the property is what actually moves the element. The plain margin-top
- * is there for the same class on a non-container element.
+ * setting the property is what actually moves the element.
+ *
+ * The selector has to be .e-con.mautic-supportcard__foot, not the class alone.
+ * Elementor enqueues frontend.css after this file, and its .e-con rule resets
+ * --margin-top to 0px at the same specificity — so a single class loses on
+ * source order and the footer silently stops moving. The bare class is kept as
+ * a second selector for the same class on a non-container element.
  */
+.e-con.mautic-supportcard__foot,
 .mautic-supportcard__foot {
 	--margin-top: auto;
 	margin-top: auto;
@@ -49,6 +55,7 @@
  * --position: relative; this keeps that true if the card is ever given a
  * different position in the editor.
  */
+.e-con.mautic-supportcard,
 .mautic-supportcard {
 	--position: relative;
 	position: relative;

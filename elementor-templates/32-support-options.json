@@ -114,7 +114,6 @@
      "settings": {
       "content_width": "full",
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,
@@ -174,7 +173,12 @@
          "isLinked": "true"
         },
         "border_color": "#4E5E9D",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -266,7 +270,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Support Mautic annually</li><li>Participate in member voting</li><li>Regional rates shown before joining</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Support Mautic annually</li><li>Participate in member voting</li><li>Regional rates shown before joining</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -317,7 +321,7 @@
            "settings": {
             "text": "Explore individual membership",
             "link": {
-             "url": "https://mautic.org/become-a-member-of-mautic/#sign-up",
+             "url": "https://mautic.org/become-a-member-of-mautic/individual/",
              "is_external": "",
              "nofollow": "",
              "custom_attributes": ""
@@ -399,7 +403,12 @@
          "isLinked": "true"
         },
         "border_color": "#E0E0E0",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -481,7 +490,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Make support part of your annual budget</li><li>Show your company's commitment</li><li>Compare regional rates and tiers</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Make support part of your annual budget</li><li>Show your company's commitment</li><li>Compare regional rates and tiers</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -614,7 +623,12 @@
          "isLinked": "true"
         },
         "border_color": "#E0E0E0",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -696,7 +710,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Flexible financial support</li><li>No membership or voting rights</li><li>Handled through Open Collective</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Flexible financial support</li><li>No membership or voting rights</li><li>Handled through Open Collective</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -807,7 +821,6 @@
        "isLinked": "false"
       },
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,

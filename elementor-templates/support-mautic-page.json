@@ -19,7 +19,6 @@
      "isLinked": "false"
     },
     "flex_direction": "row",
-    "flex_wrap": "wrap",
     "flex_gap": {
      "unit": "px",
      "size": 40,
@@ -39,7 +38,7 @@
       "content_width": "full",
       "width": {
        "unit": "%",
-       "size": 58,
+       "size": 56,
        "sizes": []
       },
       "flex_direction": "column",
@@ -66,9 +65,9 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Support Mautic</p>",
+        "editor": "<p><span class=\"mautic-kicker\">Support Mautic</span></p>",
         "align": "left",
-        "text_color": "#00796B",
+        "text_color": "#FFFFFF",
         "typography_typography": "custom",
         "typography_font_family": "Roboto",
         "typography_font_size": {
@@ -80,8 +79,7 @@
          "unit": "em",
          "size": 1.62,
          "sizes": []
-        },
-        "_css_classes": "mautic-kicker"
+        }
        },
        "elements": [],
        "isInner": false
@@ -236,7 +234,7 @@
       "content_width": "full",
       "width": {
        "unit": "%",
-       "size": 42,
+       "size": 40,
        "sizes": []
       },
       "flex_direction": "column",
@@ -339,7 +337,6 @@
      "settings": {
       "content_width": "full",
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 48,
@@ -365,7 +362,7 @@
         "content_width": "full",
         "width": {
          "unit": "%",
-         "size": 56,
+         "size": 55,
          "sizes": []
         },
         "flex_direction": "column",
@@ -470,7 +467,7 @@
         "content_width": "full",
         "width": {
          "unit": "%",
-         "size": 40,
+         "size": 39,
          "sizes": []
         },
         "flex_direction": "column",
@@ -520,7 +517,6 @@
      "settings": {
       "content_width": "full",
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,
@@ -875,7 +871,6 @@
      "settings": {
       "content_width": "full",
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,
@@ -935,7 +930,12 @@
          "isLinked": "true"
         },
         "border_color": "#4E5E9D",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -1027,7 +1027,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Support Mautic annually</li><li>Participate in member voting</li><li>Regional rates shown before joining</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Support Mautic annually</li><li>Participate in member voting</li><li>Regional rates shown before joining</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -1078,7 +1078,7 @@
            "settings": {
             "text": "Explore individual membership",
             "link": {
-             "url": "https://mautic.org/become-a-member-of-mautic/#sign-up",
+             "url": "https://mautic.org/become-a-member-of-mautic/individual/",
              "is_external": "",
              "nofollow": "",
              "custom_attributes": ""
@@ -1160,7 +1160,12 @@
          "isLinked": "true"
         },
         "border_color": "#E0E0E0",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -1242,7 +1247,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Make support part of your annual budget</li><li>Show your company's commitment</li><li>Compare regional rates and tiers</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Make support part of your annual budget</li><li>Show your company's commitment</li><li>Compare regional rates and tiers</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -1375,7 +1380,12 @@
          "isLinked": "true"
         },
         "border_color": "#E0E0E0",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 31.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -1457,7 +1467,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<ul class=\"mautic-ticklist\"><li>Flexible financial support</li><li>No membership or voting rights</li><li>Handled through Open Collective</li></ul>",
+          "editor": "<ul role=\"list\" class=\"mautic-ticklist\"><li>Flexible financial support</li><li>No membership or voting rights</li><li>Handled through Open Collective</li></ul>",
           "align": "left",
           "text_color": "#393939",
           "typography_typography": "custom",
@@ -1568,7 +1578,6 @@
        "isLinked": "false"
       },
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,
@@ -1825,7 +1834,6 @@
      "settings": {
       "content_width": "full",
       "flex_direction": "row",
-      "flex_wrap": "wrap",
       "flex_gap": {
        "unit": "px",
        "size": 24,
@@ -1885,7 +1893,12 @@
          "isLinked": "true"
         },
         "border_color": "#E0E0E0",
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 48.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -1919,7 +1932,6 @@
           "content_width": "full",
           "_css_classes": "mautic-supportcard__foot",
           "flex_direction": "row",
-          "flex_wrap": "wrap",
           "flex_gap": {
            "unit": "px",
            "size": 13,
@@ -2052,7 +2064,12 @@
          "left": "15",
          "isLinked": "true"
         },
-        "_css_classes": "mautic-supportcard"
+        "_css_classes": "mautic-supportcard",
+        "width": {
+         "unit": "%",
+         "size": 48.9,
+         "sizes": []
+        }
        },
        "elements": [
         {
@@ -2332,7 +2349,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -2381,7 +2399,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -2430,7 +2449,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -2479,7 +2499,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -2528,7 +2549,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false
@@ -2577,7 +2599,8 @@
            "unit": "em",
            "size": 1.65,
            "sizes": []
-          }
+          },
+          "_css_classes": "mautic-on-light"
          },
          "elements": [],
          "isInner": false

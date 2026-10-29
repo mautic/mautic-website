@@ -126,9 +126,20 @@
  * Wrap the kicker text in <span class="mautic-kicker"> inside a Text Editor.
  * ------------------------------------------------------------------------ */
 
+/*
+ * The pill is a veil over whatever band it sits on, so its opacity decides the
+ * label's contrast. At 0.14 white text reads 4.46:1 on the Dusky Blue hero and
+ * 4.21:1 on the #00796B individual hero — both under the 4.5:1 the 13px label
+ * needs. At 0.06 they are 5.36:1 and 4.76:1.
+ *
+ * The colour is set here rather than left to the Text Editor widget: the pill
+ * only has a known contrast against white ink, and a template that pairs it
+ * with the teal used elsewhere in the design lands at 1.19:1.
+ */
 .mautic-kicker {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
     border-radius: 100px;
     padding: 5px 14px;
     font-size: 13px;

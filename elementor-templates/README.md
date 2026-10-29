@@ -18,26 +18,19 @@ whenever the pages change substantially.
 
 ## Before importing
 
-**1. Replace the media placeholders.** The mascot images are referenced as
-`MEDIA_URL/mautibot-*.svg`. Upload the three SVGs from the design handoff to the media
-library first (Safe SVG is already active on the site), then run:
+**1. Mascots ship in the theme.** No media-library upload and no find-and-replace.
+The templates point at `/wp-content/themes/mautic-theme/assets/membership/`:
 
-```bash
-# GNU sed (Linux, and macOS with coreutils/gnu-sed installed)
-sed -i 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
+| File | Used on |
+| --- | --- |
+| `mautibot-welcome.svg` | Corporate hero |
+| `mautibot-happy.svg` | Individual hero, corporate impact section |
+| `mautibot-information.svg` | Banner pointing at individual membership |
 
-# BSD sed (macOS default) — note the mandatory empty backup suffix
-sed -i '' 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
-```
-
-Or portably, without worrying which sed you have:
-
-```bash
-perl -pi -e 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' *.json
-```
-
-Adjust the upload path to wherever they actually land. Testimonial photos already point
-at real media library URLs and need no change.
+`mautibot-danger.svg`, `mautibot-warning.svg` and `mautibot-error.svg` live in the same
+folder for other UI, but are not used on these pages. Testimonial photos already point
+at real media library URLs and need no change. The theme must be deployed before the
+templates will show the mascots.
 
 **2. Add the two missing global colours** (Site Settings → Global Colors), so the
 sections that use them stay editable from one place:
@@ -121,7 +114,7 @@ exactly — no inline styles.
   <div class="mautic-spotlight__beam" aria-hidden="true"></div>
   <div class="mautic-spotlight__pool" aria-hidden="true"></div>
   <img class="mautic-spotlight__figure"
-       src="MEDIA_URL/mautibot-welcome.svg"
+       src="/wp-content/themes/mautic-theme/assets/membership/mautibot-welcome.svg"
        alt="" role="presentation">
 </div>
 ```

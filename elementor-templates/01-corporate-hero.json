@@ -245,7 +245,7 @@
        "elType": "widget",
        "widgetType": "html",
        "settings": {
-        "html": "<div class=\"mautic-spotlight\">\n  <div class=\"mautic-spotlight__beam\" aria-hidden=\"true\"></div>\n  <div class=\"mautic-spotlight__pool\" aria-hidden=\"true\"></div>\n  <img class=\"mautic-spotlight__figure\" src=\"MEDIA_URL/mautibot-welcome.svg\" alt=\"\" role=\"presentation\">\n</div>"
+        "html": "<div class=\"mautic-spotlight\">\n  <div class=\"mautic-spotlight__beam\" aria-hidden=\"true\"></div>\n  <div class=\"mautic-spotlight__pool\" aria-hidden=\"true\"></div>\n  <img class=\"mautic-spotlight__figure\" src=\"/wp-content/themes/mautic-theme/assets/membership/mautibot-welcome.svg\" alt=\"\" role=\"presentation\">\n</div>"
        },
        "elements": [],
        "isInner": false

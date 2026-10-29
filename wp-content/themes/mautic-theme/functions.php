@@ -191,6 +191,24 @@ add_action('wp_enqueue_scripts', function () {
     );
 
     wp_enqueue_style('mautic-membership');
+
+    // The Support Mautic page needs three classes on top of membership.css.
+    // Unlike membership.css this one is page-scoped: it is a single page, so
+    // there is no reason to put it on every request. The slug list is
+    // filterable because the page has to exist before anyone can confirm what
+    // its slug is, and because a staging copy will have a different one.
+    wp_register_style(
+        'mautic-support',
+        get_stylesheet_directory_uri() . '/css/support.css',
+        ['mautic-membership'],
+        HELLO_ELEMENTOR_CHILD_VERSION
+    );
+
+    $support_slugs = apply_filters('mautic_support_page_slugs', ['support-mautic']);
+
+    if (is_page($support_slugs)) {
+        wp_enqueue_style('mautic-support');
+    }
 }, 5);
 
 /**

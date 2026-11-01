@@ -188,13 +188,10 @@ individually.
 
 ## Before importing
 
-**1. Replace the media placeholder.** The hero mascot is `MEDIA_URL/mautibot-happy.svg`
-— the same file the individual membership page uses, so if you have already imported
-that page the SVG is in the media library. Run the same find-and-replace as above:
-
-```bash
-perl -pi -e 's#MEDIA_URL#https://mautic.org/wp-content/uploads/2026/08#g' 3*.json support-mautic-page.json
-```
+**1. Nothing to replace.** The hero mascot is served from the theme at
+`/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg`, the same way
+the individual membership page loads it, so there is no media-library import and no
+find-and-replace step for this page.
 
 The community photo and the testimonial photo point at real media library URLs on
 mautic.org and need no change.
@@ -264,7 +261,7 @@ As on the membership pages, with the happy mascot:
   <div class="mautic-spotlight__beam" aria-hidden="true"></div>
   <div class="mautic-spotlight__pool" aria-hidden="true"></div>
   <img class="mautic-spotlight__figure"
-       src="MEDIA_URL/mautibot-happy.svg"
+       src="/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg"
        alt="" role="presentation">
 </div>
 ```

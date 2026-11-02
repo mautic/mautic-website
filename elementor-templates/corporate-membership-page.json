@@ -1054,21 +1054,9 @@
       {
        "id": "091d584",
        "elType": "widget",
-       "widgetType": "image",
+       "widgetType": "html",
        "settings": {
-        "image": {
-         "url": "/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg",
-         "id": "",
-         "alt": "",
-         "source": "library"
-        },
-        "image_size": "full",
-        "align": "left",
-        "width": {
-         "unit": "px",
-         "size": 180,
-         "sizes": []
-        }
+        "html": "<img src=\"/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg\" alt=\"\" role=\"presentation\" width=\"180\">"
        },
        "elements": [],
        "isInner": false
@@ -2714,21 +2702,9 @@
       {
        "id": "077e29b",
        "elType": "widget",
-       "widgetType": "image",
+       "widgetType": "html",
        "settings": {
-        "image": {
-         "url": "/wp-content/themes/mautic-theme/assets/membership/mautibot-information.svg",
-         "id": "",
-         "alt": "",
-         "source": "library"
-        },
-        "image_size": "full",
-        "align": "center",
-        "width": {
-         "unit": "px",
-         "size": 110,
-         "sizes": []
-        }
+        "html": "<img src=\"/wp-content/themes/mautic-theme/assets/membership/mautibot-information.svg\" alt=\"\" role=\"presentation\" width=\"110\">"
        },
        "elements": [],
        "isInner": false

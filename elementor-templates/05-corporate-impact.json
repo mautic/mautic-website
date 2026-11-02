@@ -112,21 +112,9 @@
       {
        "id": "f717716",
        "elType": "widget",
-       "widgetType": "image",
+       "widgetType": "html",
        "settings": {
-        "image": {
-         "url": "/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg",
-         "id": "",
-         "alt": "",
-         "source": "library"
-        },
-        "image_size": "full",
-        "align": "left",
-        "width": {
-         "unit": "px",
-         "size": 180,
-         "sizes": []
-        }
+        "html": "<img src=\"/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg\" alt=\"\" role=\"presentation\" width=\"180\">"
        },
        "elements": [],
        "isInner": false

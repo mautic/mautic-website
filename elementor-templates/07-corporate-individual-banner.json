@@ -64,21 +64,9 @@
       {
        "id": "3ef8154",
        "elType": "widget",
-       "widgetType": "image",
+       "widgetType": "html",
        "settings": {
-        "image": {
-         "url": "/wp-content/themes/mautic-theme/assets/membership/mautibot-information.svg",
-         "id": "",
-         "alt": "",
-         "source": "library"
-        },
-        "image_size": "full",
-        "align": "center",
-        "width": {
-         "unit": "px",
-         "size": 110,
-         "sizes": []
-        }
+        "html": "<img src=\"/wp-content/themes/mautic-theme/assets/membership/mautibot-information.svg\" alt=\"\" role=\"presentation\" width=\"110\">"
        },
        "elements": [],
        "isInner": false

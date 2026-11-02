@@ -164,9 +164,17 @@
  * Member logo wall
  * Add to an Elementor Loop Grid pointed at the member post type.
  * The loop template should contain a single Featured Image widget.
+ *
+ * Loop Grid is CSS grid with 1fr columns, so leftover logos stay left.
+ * Flex wrap + a percent width (same gap lesson as the 31% benefit cards)
+ * centers an incomplete last row. These widths replace the widget's
+ * Columns control: 4 desktop / 3 tablet / 2 mobile.
  * ------------------------------------------------------------------------ */
 
 .mautic-logowall .elementor-loop-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -178,6 +186,22 @@
     border-radius: 10.8px;
     min-height: 88px;
     padding: 12px 16px;
+    box-sizing: border-box;
+    flex: 0 0 auto !important;
+    width: 23.5% !important;
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .mautic-logowall .e-loop-item {
+        width: 31% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .mautic-logowall .e-loop-item {
+        width: 47% !important;
+    }
 }
 
 .mautic-logowall .e-loop-item img {

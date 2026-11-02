@@ -19,7 +19,10 @@ whenever the pages change substantially.
 ## Before importing
 
 **1. Mascots ship in the theme.** No media-library upload and no find-and-replace.
-The templates point at `/wp-content/themes/mautic-theme/assets/membership/`:
+The templates point at `/wp-content/themes/mautic-theme/assets/membership/`.
+Hero, impact, and the individual-membership banner use HTML `<img>` tags, not
+Image widgets — Elementor import blanks Image widgets whose URL is a theme file
+rather than a media-library attachment.
 
 | File | Used on |
 | --- | --- |
@@ -75,6 +78,8 @@ editor, so it can't be shipped as JSON. Replace the placeholder with:
 - Advanced → CSS Classes: `mautic-logowall`
 
 The styling for that class ships in `wp-content/themes/mautic-theme/css/membership.css`.
+It also centers an incomplete last row; the Loop Grid Columns control is then
+ignored in favour of 4 / 3 / 2 via CSS.
 
 **Icons.** Every icon box uses a Font Awesome placeholder so the import renders
 something sensible immediately. The design calls for Remix Icon line variants — upload

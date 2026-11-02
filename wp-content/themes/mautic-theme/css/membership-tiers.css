@@ -1,0 +1,304 @@
+/**
+ * Corporate membership tiers comparison table.
+ *
+ * Colour notes: the check and dash glyphs carry the meaning of every body cell, so
+ * they use #00796b and #6f6f6f (5.32:1 and 5.02:1 on white) rather than the lighter
+ * #00B49D / #c6c6c6 in the design reference, which fail WCAG AA at 2.62:1 and 1.71:1.
+ *
+ * This stylesheet is registered with membership.css as a dependency and relies on
+ * .mautic-sr-only and .mautic-anchor from it.
+ */
+
+.mautic-tiers {
+    --mautic-tiers-hair: #e0e0e0;
+    --mautic-tiers-hair-soft: #eeeeee;
+    --mautic-tiers-shade: #f4f4f4;
+    --mautic-tiers-pop: #fdf3dd;
+    --mautic-tiers-pop-cell: #fdf9ef;
+    --mautic-tiers-yes: #00796b;
+    --mautic-tiers-no: #6f6f6f;
+    --mautic-tiers-ink: #1f1f1f;
+    --mautic-tiers-muted: #525252;
+    --mautic-tiers-blue: #4e5e9d;
+    --mautic-tiers-blue-hover: #3d4a7c;
+    --mautic-tiers-yellow: #fdb933;
+    --mautic-tiers-yellow-hover: #e9a821;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--mautic-tiers-ink);
+}
+
+/* ---------- country picker ---------- */
+
+.mautic-tiers__picker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 12px;
+    margin-bottom: 28px;
+}
+
+.mautic-tiers__label {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.mautic-tiers__select {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 9px 14px;
+    border-radius: 6px;
+    border: 1px solid #8d8d8d;
+    background: #f4f4f4;
+    color: var(--mautic-tiers-ink);
+    min-width: 220px;
+}
+
+.mautic-tiers__select:focus-visible {
+    outline: 2px solid var(--mautic-tiers-blue);
+    outline-offset: 2px;
+}
+
+.mautic-tiers__note {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: var(--mautic-tiers-no);
+    margin: 0;
+}
+
+/* ---------- table shell ---------- */
+
+.mautic-tiers__scroll {
+    overflow-x: auto;
+    border: 1px solid var(--mautic-tiers-hair);
+    border-radius: 15.6px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mautic-tiers__scroll:focus-visible {
+    outline: 2px solid var(--mautic-tiers-blue);
+    outline-offset: 2px;
+}
+
+.mautic-tiers__table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    min-width: 1040px;
+    table-layout: fixed;
+    margin: 0;
+}
+
+.mautic-tiers__table td,
+.mautic-tiers__table th {
+    border: 0;
+}
+
+/* ---------- column headers ---------- */
+
+.mautic-tiers__corner,
+.mautic-tiers__head {
+    background: var(--mautic-tiers-shade);
+    border-bottom: 1px solid var(--mautic-tiers-hair);
+}
+
+.mautic-tiers__corner {
+    width: 240px;
+    min-width: 240px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.mautic-tiers__head {
+    padding: 20px 12px;
+    text-align: center;
+    border-left: 1px solid var(--mautic-tiers-hair-soft);
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.mautic-tiers__head.is-popular {
+    background: var(--mautic-tiers-pop);
+    box-shadow: inset 0 3px 0 var(--mautic-tiers-yellow);
+}
+
+.mautic-tiers__badge {
+    display: inline-block;
+    background: var(--mautic-tiers-yellow);
+    color: var(--mautic-tiers-ink);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+}
+
+.mautic-tiers__name {
+    display: block;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.mautic-tiers__price {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 6px;
+    color: var(--mautic-tiers-blue);
+    font-variant-numeric: tabular-nums;
+}
+
+.mautic-tiers__per {
+    display: block;
+    font-size: 12px;
+    color: var(--mautic-tiers-no);
+}
+
+/* Join buttons keep the site's global pill shape. */
+.mautic-tiers__join {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    background: var(--mautic-tiers-blue);
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 150ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+.mautic-tiers__join:hover,
+.mautic-tiers__join:focus {
+    background: var(--mautic-tiers-blue-hover);
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.mautic-tiers__join:focus-visible {
+    outline: 2px solid var(--mautic-tiers-ink);
+    outline-offset: 2px;
+}
+
+.mautic-tiers__head.is-popular .mautic-tiers__join {
+    background: var(--mautic-tiers-yellow);
+    color: var(--mautic-tiers-ink);
+}
+
+.mautic-tiers__head.is-popular .mautic-tiers__join:hover,
+.mautic-tiers__head.is-popular .mautic-tiers__join:focus {
+    background: var(--mautic-tiers-yellow-hover);
+    color: var(--mautic-tiers-ink);
+}
+
+/* ---------- group divider rows ---------- */
+
+.mautic-tiers__grouprow th {
+    background: var(--mautic-tiers-shade);
+    border-top: 1px solid var(--mautic-tiers-hair);
+    border-bottom: 1px solid var(--mautic-tiers-hair);
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--mautic-tiers-muted);
+}
+
+/* ---------- body ---------- */
+
+.mautic-tiers__rowhead {
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+    color: #393939;
+    background: #ffffff;
+    border-top: 1px solid var(--mautic-tiers-hair-soft);
+}
+
+.mautic-tiers__cell {
+    padding: 11px 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-top: 1px solid var(--mautic-tiers-hair-soft);
+    border-left: 1px solid var(--mautic-tiers-hair-soft);
+    font-variant-numeric: tabular-nums;
+}
+
+.mautic-tiers__cell.is-yes {
+    color: var(--mautic-tiers-yes);
+    font-weight: 700;
+}
+
+.mautic-tiers__cell.is-no {
+    color: var(--mautic-tiers-no);
+    font-weight: 400;
+}
+
+.mautic-tiers__cell.is-popular {
+    background: var(--mautic-tiers-pop-cell);
+}
+
+/* Keep the benefit name visible while the tier columns scroll sideways. */
+.mautic-tiers__corner,
+.mautic-tiers__rowhead,
+.mautic-tiers__grouprow th {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+.mautic-tiers__rowhead::after,
+.mautic-tiers__corner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    border-right: 1px solid var(--mautic-tiers-hair);
+}
+
+/* ---------- small print ---------- */
+
+.mautic-tiers__smallprint {
+    margin-top: 20px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--mautic-tiers-muted);
+}
+
+.mautic-tiers__smallprint p {
+    margin: 0 0 10px;
+}
+
+.mautic-tiers__smallprint p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    /* table-layout is fixed, so the header row alone sets the column widths. */
+    .mautic-tiers__corner {
+        width: 170px;
+        min-width: 170px;
+    }
+
+    .mautic-tiers__table {
+        min-width: 800px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mautic-tiers__join {
+        transition: none;
+    }
+}

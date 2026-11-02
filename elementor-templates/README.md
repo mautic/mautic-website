@@ -1,12 +1,20 @@
-# Membership page Elementor templates
+# Elementor templates
 
-Importable Elementor templates for the two membership pages. These are **scaffolds**:
-they carry the structure, copy, colours and type scale from the design handoff so that
-nobody has to retype 4,000 words, but expect to nudge spacing in the editor afterwards.
+Importable Elementor templates. These are **scaffolds**: they carry the structure,
+copy, colours and type scale from the design handoff so that nobody has to retype
+thousands of words, but expect to nudge spacing in the editor afterwards.
 
 Page content lives in the WordPress database, not in this repo. These files exist so
 that a page build is reviewable, repeatable and restorable — re-export and commit them
 whenever the pages change substantially.
+
+| Files | Page |
+| --- | --- |
+| `01`–`09`, `corporate-membership-page.json` | Corporate membership |
+| `20`–`24`, `individual-membership-page.json` | Individual membership |
+| `30`–`35`, `support-mautic-page.json` | Support Mautic |
+
+# Membership pages
 
 ## Before importing
 
@@ -162,3 +170,180 @@ ink (`#1F1F1F`, 6.29:1), which changes the hero's character much more.
 `mautic-on-dark` and `mautic-on-light` classes in `membership.css` correct these to
 white and `#00796b` respectively. They are already applied in these templates — keep
 them on any new link you add to a coloured section.
+
+# Support Mautic page
+
+A new page asking people to fund the project — individual membership, corporate
+membership or a donation — with the reasoning, the transparency links and a FAQ
+around it. It sits beside the membership pages rather than replacing anything:
+the membership pages sell membership, this one explains why the project needs
+funding at all and routes people to the right option.
+
+`support-mautic-page.json` is the whole page. `30`–`35` are the same sections
+individually.
+
+| File | Section |
+| --- | --- |
+| `30-support-hero.json` | Hero + brand hairline |
+| `31-support-why.json` | Free to use does not mean free to maintain |
+| `32-support-options.json` | The three ways to support, partner strip |
+| `33-support-transparency.json` | Testimonial and Open Collective |
+| `34-support-faq.json` | Practical questions |
+| `35-support-final-cta.json` | Brand hairline + final call to action |
+
+## Before importing
+
+**1. Nothing to replace.** The hero mascot is served from the theme at
+`/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg`, the same way
+the individual membership page loads it, so there is no media-library import and no
+find-and-replace step for this page.
+
+The community photo and the testimonial photo point at real media library URLs on
+mautic.org and need no change.
+
+**2. No new global colours.** This page uses Dusky Blue `#4E5E9D`, Accent `#FDB933`
+and Pale Cyan `#E5F4F3`. Pale Cyan is the one the membership README asks you to add;
+if you have already done that, there is nothing to do here.
+
+**3. Check the individual membership page exists.** The "Explore individual
+membership" button points at `/become-a-member-of-mautic/individual/`, which is
+created by PR #62, phase 4. **Do not put this page live before that one** — or point
+the button back at `/become-a-member-of-mautic/#sign-up` until it is there.
+
+**4. Give the page the slug `support-mautic`.** `support.css` is enqueued on that slug
+only, rather than site-wide, because it is one page. If you need a different slug — or
+a second one on staging — filter it:
+
+```php
+add_filter('mautic_support_page_slugs', function ($slugs) {
+    $slugs[] = 'support-the-project';
+    return $slugs;
+});
+```
+
+Without the stylesheet the page still reads correctly, but the "Recommended" badge
+sits inline instead of on the card's border, the three calls to action no longer line
+up, and the tick lists lose their ticks. If that is what you are seeing, the slug is
+the first thing to check.
+
+## Importing
+
+Create a **new** page — this one has no existing URL to preserve — then Templates →
+Saved Templates → Import, and insert `support-mautic-page.json`.
+
+## What still has to be done by hand
+
+**Icons.** Six icon boxes ship with Font Awesome placeholders. The design calls for
+Remix Icon line variants; upload the SVGs and swap them in the editor, the same way as
+on the membership pages.
+
+| Section | Design icon | Placeholder |
+| --- | --- | --- |
+| Why support | `ri-git-branch-line` | `fa-code-branch` |
+| Why support | `ri-book-2-line` | `fa-book` |
+| Why support | `ri-compass-3-line` | `fa-compass` |
+| Partner strip | `ri-shield-star-line` | `fa-shield-alt` |
+
+**FAQ styling.** The Nested Accordion imports with Elementor's default look. The design
+draws each question as a white card with a 1px `#E0E0E0` border and a 10.8px radius —
+set that on the widget's Style tab. The content settings that matter (one item open at
+a time, `h3` titles, FAQ schema on, plus/minus icons) are already in the template.
+
+**Check the heading levels after any edit.** The page runs `h1` → `h2` → `h3` with no
+skips. Elementor makes it easy to change a heading's size and take its level with it.
+
+## Copy-paste HTML blocks
+
+Three HTML widgets. Their CSS is in `support.css` and `membership.css`, so paste the
+markup exactly — no inline styles.
+
+### Hero mascot spotlight
+
+As on the membership pages, with the happy mascot:
+
+```html
+<div class="mautic-spotlight">
+  <div class="mautic-spotlight__beam" aria-hidden="true"></div>
+  <div class="mautic-spotlight__pool" aria-hidden="true"></div>
+  <img class="mautic-spotlight__figure"
+       src="/wp-content/themes/mautic-theme/assets/membership/mautibot-happy.svg"
+       alt="" role="presentation">
+</div>
+```
+
+### "Recommended" badge
+
+First element inside the individual membership card, which carries the CSS class
+`mautic-supportcard`:
+
+```html
+<span class="mautic-badge">Recommended</span>
+```
+
+### Tick lists
+
+A real list in a Text Editor widget, not an Icon List. The tick is a background image
+on `::before` with empty content, so a screen reader reads the three items and nothing
+else — an Icon List puts an `<i>` in front of each one, which some screen readers
+announce.
+
+```html
+<ul role="list" class="mautic-ticklist">
+  <li>Support Mautic annually</li>
+  <li>Participate in member voting</li>
+  <li>Regional rates shown before joining</li>
+</ul>
+```
+
+`role="list"` is not redundant here. Safari drops list semantics from a `<ul>` whose
+`list-style` is `none` and whose marker is empty generated content, which is exactly
+what this list is — VoiceOver would read the items but not announce them as a list or
+let you jump between them. Keep the attribute on any tick list you add.
+
+### Aligning the calls to action
+
+The three cards hold different amounts of copy, so two classes do the work:
+
+- `mautic-supportcard__foot` on the container holding the button and the small print,
+  which pushes that block to the bottom of the card.
+- `mautic-supportcard__note` on the small print itself, which reserves two lines.
+
+Both are needed. The first aligns the bottom of the cards; without the second a card
+whose small print runs to one line instead of two still sits its button a line higher
+than the others. **Keep the small print to two lines or fewer** — if it ever needs
+three, change the `min-block-size` in `support.css` rather than leaving the buttons
+out of line.
+
+## Deliberate departures from the design
+
+**Buttons.** The design draws three button styles — the yellow pill, a solid blue one
+and an outline one — and pairs the hero's primary button with a ghost button. The
+templates use the site's single global button for every primary action and make the
+secondary ones text links, which is the same rule the membership pages follow. Nothing
+here changes the global button. If the project does want a secondary button style,
+that is a global kit decision, not something to introduce on one page.
+
+**Anchors.** `#membership` and `#transparency` are on containers that also carry
+`mautic-anchor`, so the scroll offset clears the sticky header. Keep the two paired.
+
+**Column widths.** The multi-column rows set an explicit percentage width on each
+child and do *not* set Flex Wrap. An Elementor container with no width is 100% wide,
+so a row of three cards with no widths puts one card per line; and a row that does
+wrap, whose children add up to 100% plus a gap, pushes its last column onto a second
+line. Leaving Flex Wrap alone gives `nowrap` on desktop, and Elementor's own
+`max-width: 767px` rule sets every container back to 100% wide and wrapping — so the
+phone layout needs no second set of widths. If you add a column, give it a width and
+leave the gap room.
+
+## Accessibility notes carried into these templates
+
+- Headings run `h1` → `h2` → `h3` with no skipped levels.
+- The FAQ uses the Nested Accordion — real buttons, arrow-key support, FAQ schema on.
+- The hero mascot is decorative and carries an empty `alt`. The community photo and
+  the testimonial photo are content and are described.
+- Tick markers are CSS background images on empty `::before`, so they are never
+  announced, and they fall back to list bullets under `forced-colors`.
+- Links on the blue hero and the final CTA carry `mautic-on-dark`; links on the pale
+  cyan card carry `mautic-on-light`. Without those the kit's global Green Teal link
+  reads at 2.35:1 and 2.32:1 — both fail.
+- The tick marker is `#00796B` on white (5.32:1), not the design's `#00B49D` (2.62:1).

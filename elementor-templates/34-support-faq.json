@@ -1,0 +1,441 @@
+{
+ "content": [
+  {
+   "id": "971be2b",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 820,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "76",
+     "right": "20",
+     "bottom": "76",
+     "left": "20",
+     "isLinked": "false"
+    },
+    "flex_direction": "column",
+    "flex_gap": {
+     "unit": "px",
+     "size": 24,
+     "column": "24",
+     "row": "24",
+     "isLinked": "true"
+    },
+    "background_background": "classic",
+    "background_color": "#F4F4F4"
+   },
+   "elements": [
+    {
+     "id": "216af07",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Practical questions",
+      "header_size": "h2",
+      "align": "left",
+      "title_color": "#1F1F1F",
+      "typography_typography": "custom",
+      "typography_font_family": "Titillium Web",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a2186f6",
+     "elType": "widget",
+     "widgetType": "nested-accordion",
+     "settings": {
+      "items": [
+       {
+        "item_title": "Do I have to pay to keep using Mautic?",
+        "_id": "f2b0f97",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "I already pay for Mautic hosting or services. Doesn't that fund the project?",
+        "_id": "bd566be",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "What is the difference between a donation and membership?",
+        "_id": "c5ead2a",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "Does supporting Mautic buy technical support or a particular feature?",
+        "_id": "4bad0b4",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "Can my company request an invoice?",
+        "_id": "65e713d",
+        "element_css_id": ""
+       },
+       {
+        "item_title": "Can I contribute without money?",
+        "_id": "ac078a8",
+        "element_css_id": ""
+       }
+      ],
+      "default_state": "all_collapsed",
+      "max_items_expended": "one",
+      "title_tag": "h3",
+      "faq_schema": "yes",
+      "accordion_item_title_space_between": {
+       "unit": "px",
+       "size": 0,
+       "sizes": []
+      },
+      "accordion_item_title_distance_from_content": {
+       "unit": "px",
+       "size": 0,
+       "sizes": []
+      },
+      "title_normal_color": "#1F1F1F",
+      "accordion_item_title_icon": {
+       "value": "fas fa-plus",
+       "library": "fa-solid"
+      },
+      "accordion_item_title_icon_active": {
+       "value": "fas fa-minus",
+       "library": "fa-solid"
+      },
+      "icon_normal_color": "#4E5E9D",
+      "header_typography_typography": "custom",
+      "header_typography_font_family": "Titillium Web",
+      "header_typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "header_typography_font_weight": "600"
+     },
+     "elements": [
+      {
+       "id": "6aa9aa1",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "80557ac",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>No. Financial support is voluntary. It helps maintain the project; it is not a licence fee or a payment to unlock features.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "814858e",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "e895fc0",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Not automatically. Paying a hosting provider or an agency pays that company for the service it provides to you. Some of those companies also support the project as members or partners, and you can check whether yours is one of them on the <a href=\"https://mautic.org/members-partners/\">members and partners page</a>. If it isn't, that is a good conversation to have with them.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7708e93",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "193d9ae",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>A donation is financial support with no strings attached, in any amount, handled through Open Collective. Membership is an annual commitment that also carries rights under Mautic's governance rules — most importantly a vote in the General Assembly. If you want a say in the project's direction, you want membership.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "9a12673",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "cb03a37",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>No. Supporting the project is not a support contract, and it does not buy a place on the roadmap. What membership buys is participation in how those decisions get made. For technical support, the <a href=\"https://forum.mautic.org/\">community forums</a> are free, and a number of companies offer commercial support.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "03d4881",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "17aa5a8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Yes. Email <a href=\"mailto:membership@mautic.org\">membership@mautic.org</a> and we'll issue an invoice so you can pay in advance by bank transfer.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "3e2d38c",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": "false"
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0",
+         "isLinked": "true"
+        }
+       },
+       "elements": [
+        {
+         "id": "cdc2bbf",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Yes, and it matters just as much. Code, testing, documentation, translation, design, support in the forums and community organising are all contributions. Start at <a href=\"https://mautic.org/contribute-to-mautic/\">contribute to Mautic</a>. Regular contributors may also qualify for the free participatory route to individual membership.</p>",
+          "align": "left",
+          "text_color": "#525252",
+          "typography_typography": "custom",
+          "typography_font_family": "Roboto",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 15.5,
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.65,
+           "sizes": []
+          },
+          "_css_classes": "mautic-on-light"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Support Mautic — practical questions",
+ "type": "container"
+}
